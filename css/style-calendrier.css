@@ -1,0 +1,306 @@
+
+#myDropdown , #myDropdown2 {
+	z-index: 5;
+}
+
+.active a.dropbtn {
+	z-index: 6 !important;
+}
+
+nav li a {
+	z-index: 6 !important;
+	position: relative;
+}
+
+#navigation {
+	z-index: 6 !important;
+}
+
+/******************************/
+/******************************/
+/*********** SLIDE 1 **********/
+
+img.logo-wakeup {
+    width: 360px;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+}
+
+.slide1 {
+	padding: 13em 0em 7em 0em;
+	text-align: center;
+}
+
+.titre-calendrier {
+	position: relative;
+	margin-top: 3em;
+}
+
+.titre-calendrier img {
+	max-width: 150px;
+}
+
+img.deco-left {
+	margin-left: -2em;
+	z-index: 2;
+	position: relative;
+}
+img.deco-right {
+	margin-right: -2em;
+	z-index: 2;
+	position: relative;
+}
+
+.titre-calendrier h1 {
+	background-color: #f5e873;
+	color:#ff0055;
+	display: inline;
+	padding: 0.5em 1em 0.5em 1em;
+	font-family: 'Raleway-Black';
+	font-size: 2.5em;
+	z-index: 1;
+	position: relative;
+}
+.titre2-calendrier h2 {
+	color:#f5e873;
+	display: inline;
+	padding: 0.5em 1em 0.5em 1em;
+	font-family: 'Raleway-Black';
+	font-size: 1.8em;
+	margin-bottom: 4em;
+}
+.titre2-calendrier p {
+	color:#ffffff;
+	font-family: 'Raleway-Black';
+	font-size: 1.4em;
+	margin-bottom: 1em;
+	margin-top: 2em;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.titre2-calendrier a {
+	color: #ff0055;
+}
+
+.titre2-calendrier a:hover , .titre2-calendrier a:focus, .titre2-calendrier a:active {
+	-webkit-transition: fill .2s ease-in-out;
+	color: #f5e873;
+}
+
+.fenetre {
+	width: 181px;
+	height: 181px;
+	max-height: 181px;
+	padding-top: 42px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#clickMe {
+	display: inline-block;
+}
+
+.fenetres {
+	max-width: 920px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
+}
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.audioWrapper {
+	display: none;
+}
+
+.audio-visible .audioWrapper {
+	display: initial;
+}
+
+.carte-cadeau {
+	margin-top: 2em;
+}
+
+/*.sticky {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}*/
+
+
+@media screen and (max-width: 930px) {
+	.titre-calendrier {
+		margin-top: 0em;
+	}
+	img.deco {
+		max-width: 100px;
+	}
+	.titre-calendrier h1 {
+		background-color: #f5e873;
+		color:#ff0055;
+		display: inline;
+		padding: 0.5em 1em 0.5em 1em;
+		font-family: 'Raleway-Black';
+		font-size: 2em;
+		z-index: 2;
+		position: relative;
+	}
+	.titre2-calendrier h2 {
+		color:#f5e873;
+		display: inline;
+		padding: 0.5em 1em 0.5em 1em;
+		font-family: 'Raleway-Black';
+		font-size: 1.7em;
+		margin-bottom: 4em;
+	}
+	.titre-calendrier {
+		margin-bottom: 1em;
+	}
+	img.deco-right {
+		z-index: 3;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	img.deco-left {
+		display: none;
+	}
+	.titre2-calendrier h2 {
+		display: block;
+		text-align: center;
+		margin-bottom: 2em;
+		margin-top: 0em;
+	}
+	.titre2-calendrier p {
+		margin-top: 0em;
+	}
+	.titre2-calendrier h2 {
+		margin-bottom: 1em;
+	}
+}
+
+/*********** SLIDE 1 **********/
+/******************************/
+/******************************/
+/************ MEDIA ***********/
+
+.slide-G {
+    background-color: #f5f5f5;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    text-align: center;
+}
+
+.slide-G h2 {
+    font-family: 'Raleway-Bold';
+    margin-bottom: 1.5em;
+}
+
+.slide-G .container-fluid {
+    max-width: 1050px;
+}
+
+.slide-G img {
+    padding-left: 3em;
+    padding-right: 3em;
+
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    -webkit-transition: fill .2s ease-in-out;
+}
+
+.slide-G img:hover {
+    -webkit-filter: initial;
+    filter: initial;
+    -webkit-transition: fill .2s ease-in-out;
+}
+
+@media  screen and (max-width: 768px) {
+    .slide-G img {
+        max-width: 250px;
+        margin-bottom: 3em;
+    }
+    img.logo-ud {
+        margin-bottom: 1.5em;
+    }
+    .slide-G {
+        padding-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .slide-G img {
+        margin-bottom: 1.5em;
+    }
+    .slide-G h2 {
+        margin-bottom: 0.5em;
+    }
+    .slide-G {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+}
+
+/************ MEDIA ***********/
+/******************************/
+/******************************/
+/************ PRIX ************/
+
+.prix-final {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+.cadre-prix-2 {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em 1em 3em 1em;
+    border: 2px solid #f5e873 ;
+
+}
+
+.cadre-prix-2 h3 {
+    font-family: 'Raleway-Black';
+    font-size: 1.7em;
+    color: #ffffff;
+}
+.cadre-prix-2 h2 {
+    font-family: 'Raleway-Black';
+    margin-top: 0em;
+}
+
+a.cta-boussole {
+    color: #ff0055;
+    font-family: 'Raleway-Bold';
+    font-size: 1.3em;
+    margin-top: 1.5em;
+    display: block;
+}
+a.cta-boussole:hover, a.cta-boussole:active , a.cta-boussole:focus {
+    color: #353152;
+}
+
+.bouton-slide-7 .btn {
+    background: #f5e873;
+    font-family: "Raleway-ExtraBold", Sans-serif;
+    font-size: 21px;
+    color: #000;
+    border-radius: 5px;
+    padding: 15px 20px;
+}
+.bouton-slide-7 .btn:hover {
+    background-color: #ffffff;
+    color: black;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+/************ PRIX ************/
+/******************************/

@@ -1,0 +1,53 @@
+/*
+Theme Name:     t-sixteen-child-theme
+Description:    t-sixteen-child-theme
+Author:         Sebastien
+Template:       twentysixteen
+
+(optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
+*/
+
+
+
+.site {
+	background: #F5E873 no-repeat center center fixed; 
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	margin: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	  min-width: 320px;
+}
+
+h1 {
+	font-family: 'Raleway-Black';
+	font-size: 2.5em;
+	margin-top: 0px;
+}
+h2 {
+	font-family: 'Raleway-Regular';
+	font-size: 2em;
+}
+
+a {
+	color: #FF0054;
+}
+
+a:hover {
+	color: #353152;
+}
+.message-confirmation {
+	max-width: 500px;
+}
+/*********** INTRO ************/
+/******************************/
+/******************************/
+/************ HOW *************/

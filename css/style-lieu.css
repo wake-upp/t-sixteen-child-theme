@@ -1,0 +1,345 @@
+/*
+Theme Name:     t-sixteen-child-theme
+Description:    t-sixteen-child-theme
+Author:         Sebastien
+Template:       twentysixteen
+
+(optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
+*/
+
+
+.lieu-actif a {
+	color: #03E8FC !important;
+	border: 1px solid #03E8FC !important;
+	font-size: 1.3em;
+	background-color: rgba(0,0,0,0) ;
+	-webkit-transition: all .2s ease-in-out;
+}
+
+/*********** PHOTOS ***********/
+/******************************/
+/******************************/
+/*********** PHOTOS ***********/
+
+.page-lieu .container-fluid {
+	max-width: 100%;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-top: 1px;
+}
+
+.page-lieu .col-sm-7 , .page-lieu .col-sm-5 , .page-lieu .col-sm-12 {
+	padding-right: 1px;
+	padding-left: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.page-lieu .col-sm-12 {
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.slide-photos-lieu {
+	background-color: #ffffff;
+}
+
+/*********** PHOTOS ***********/
+/******************************/
+/******************************/
+/************* MAP ************/
+
+@import "bourbon";
+
+// variables - colors
+
+$main-text: #2d313f; // main text
+$link: #d36868; // anchor tags
+$background: #e7eaf0; // body background color
+
+$color-1: #2d313f; // blue
+$color-2: #d36868; // red
+$color-3: #ffffff; // white
+
+// variables - fonts 
+
+$primary-font: 'Lora', serif;
+
+// rem fallback - credits: http://zerosixthree.se/
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// layout - breakpoints
+  
+$S:     320px;   
+$M:     768px;     
+$L:     1170px;         
+
+// layout - media queries
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+   @media only screen and (min-width: $S) { @content; } 
+  }
+  @else if $canvas == M {
+   @media only screen and (min-width: $M) { @content; } 
+  }
+  @else if $canvas == L {
+   @media only screen and (min-width: $L) { @content; } 
+  }
+}
+
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+
+html * {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+	@include box-sizing(border-box);
+}
+
+body {
+	font: {
+		size: 100%;
+		family: $primary-font; // variables inside partials > _variables.scss
+	}
+	color: $main-text;
+	background-color: $background;
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+
+header {
+	height: 200px;
+	line-height: 200px;
+	text-align: center;
+	background: $color-1;
+
+	h1 {
+		color: $color-3;
+		@include font-size(20px);
+	}
+
+	@include MQ(M) {
+		height: 300px;
+		line-height: 300px;
+	}
+}
+
+#google-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: $background;
+
+    @include MQ(M) {
+    	height: 300px;
+    }
+
+    @include MQ(L) {
+    	height: 600px;
+    }
+}
+
+#cd-google-map {
+	position: relative;
+
+	address {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		padding: 1em 1em;
+		background-color: rgba($color-2, .9);
+		color: $color-3;
+		@include font-size(13px);
+
+		@include MQ(M) {
+			@include font-size(15px);
+			text-align: center;
+		}
+	}
+}
+
+#cd-zoom-in, #cd-zoom-out {
+	height: 32px;
+	width: 32px;
+	cursor: pointer;
+	margin-left: 10px;
+	background-color: rgba($color-2, .9);
+	background-repeat: no-repeat;
+	background-size: 32px 64px;
+	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-controller.svg');
+
+	.no-touch &:hover {
+		background-color: rgba($color-2, 1);
+	}
+
+	@include MQ(M) {
+		margin-left: 50px;
+	}
+}
+
+#cd-zoom-in {
+	background-position: 50% 0;
+	margin-top: 10px;
+	margin-bottom: 1px;
+
+	@include MQ(M) {
+		margin-top: 50px;
+	}
+}
+
+#cd-zoom-out {
+	background-position: 50% -32px;
+}
+
+/*** MODIFICATIONS ***/
+#google-container {
+    height: 600px;
+}
+address {
+	display: none;
+}
+#cd-google-map {
+	margin-top: -18em;
+}
+
+/************* MAP ************/
+/******************************/
+/******************************/
+/************ INTRO ***********/
+
+.page-lieu .cta-container {
+	padding-top: 31em;
+}
+
+@media screen and (max-width: 930px) {
+	.page-lieu .cta-container {
+		padding-top: 13em;
+	}
+	.page-lieu .cta-container h2 {
+		margin-top: 6.5em;
+	}
+	#google-container {
+	    height: 600px;
+	}
+	#cd-google-map {
+		margin-top: -15em;
+	}
+	.slide-photos-lieu {
+		margin-top: -5em;
+	}
+}
+
+@media screen and (max-width: 338px) {
+	.page-lieu .cta-container h2 {
+		margin-top: 5.8em;
+	}
+	.slide-photos-lieu {
+		margin-top: -7em;
+	}
+}
+
+@media screen and (min-width: 1399px) {
+	.page-lieu .cta-container {
+		padding-top: 35em;
+	}
+	#google-container {
+	    height: 700px;
+	}
+	#cd-google-map {
+		margin-top: -19em;
+	}
+	.slide-photos-lieu {
+		margin-top: -5em;
+	}
+}
+
+@media screen and (min-width: 1585px) {
+	.page-lieu .cta-container {
+		padding-top: 40em;
+	}
+	#google-container {
+	    height: 800px;
+	}
+	#cd-google-map {
+		margin-top: -21em;
+	}
+	.slide-photos-lieu {
+		margin-top: -10em;
+	}
+}
+@media screen and (min-width: 1750px) {
+	.page-lieu .cta-container {
+		padding-top: 44em;
+	}
+	#google-container {
+	    height: 800px;
+	}
+	#cd-google-map {
+		margin-top: -23em;
+	}
+	.slide-photos-lieu {
+		margin-top: -10em;
+	}
+}
+@media screen and (min-width: 1921px) {
+	.page-lieu .cta-container {
+		padding-top: 51em;
+	}
+	#google-container {
+	    height: 900px;
+	}
+	#cd-google-map {
+		margin-top: -26em;
+	}
+	.slide-photos-lieu {
+		margin-top: -13em;
+	}
+	.img-responsive {
+		width: 100%;
+	}
+}
+
+/************ INTRO ***********/
+/******************************/
+/******************************/
+/************ INTRO ***********/
+
+.privatisation {
+	background-color: #353152;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 1.9em !important;
+	padding-bottom: 2em;
+}
+.privatisation h3 {
+	font-size: 1.4em;
+}
+.privatisation h3 a {
+	color: #FF0054;
+}
+
+
+

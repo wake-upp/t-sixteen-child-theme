@@ -1,0 +1,288 @@
+/*
+Theme Name:     t-sixteen-child-theme
+Description:    t-sixteen-child-theme
+Author:         Sebastien
+Template:       twentysixteen
+
+(optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
+*/
+
+/*************************/
+/******* MAILCHIMP *******/
+.newsletter #mc_embed_signup { 
+  background: #1E1E1E; 
+}
+.newsletter {
+  margin-bottom: 3.5em;
+}
+.newsletter h2 {
+  font-size: 1.2em;
+}
+.liens-contact a {
+  font-family: 'Raleway-Thin';
+}
+.groupe-newsletter {
+  width: 100%;
+  display: block;
+}
+.mc-field-group , .btn-sabonner {
+  display: inline-block;
+}
+.newsletter .mc-field-group {
+  margin-right: -4px;
+}
+.newsletter #mc_embed_signup div.mce_inline_error {
+  position: absolute;
+}
+.newsletter h2 , .newsletter #mc_embed_signup {
+  margin-left:auto !important;
+  margin-right: auto !important;
+  display: block !important;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.content-newsletter {
+  text-align: center;
+}
+.clear {
+  font-family: 'Raleway-Regular';
+}
+.newsletter input[type="email"] {
+  font-family: 'Raleway-Regular', "Helvetica Neue", sans-serif;
+  font-size: 1.35em;
+  background-color: #393939;
+  border: 0px;
+  border-radius: 25px 0px 0px 25px;
+  padding-left: 2em;
+  min-width: 400px;
+  padding: 0.800em 1.4em 0.800em;
+}
+.newsletter input[type="submit"] {
+  background: #FF0054;
+  border: 0;
+  border-radius: 0px 25px 25px 0px;
+  color: #fff;
+  font-family: 'Raleway-Bold', "Helvetica Neue", sans-serif;
+  font-size: 1.35em;
+  font-weight: 700;
+  letter-spacing: 0.046875em;
+  line-height: 1;
+  padding: 0.89975em 1.5em 0.89125em;
+}
+input[type="submit"]:hover , .newsletter input[type="submit"]:focus {
+  background: #03E8FC;
+  -webkit-transition: all .2s ease-in-out;
+  outline: none;
+}
+#mc_embed_signup div.mce_inline_error {
+  background-color: #1E1E1E !important;
+}
+
+@media screen and (max-width: 700px) {
+  .newsletter .mc-field-group , .clear {
+    text-align: center;
+  }
+  .newsletter .mc-field-group , .newsletter .btn-sabonner {
+    display: block;
+  }
+  .newsletter .mc-field-group {
+    margin-right: 0px;
+  }
+  .newsletter input[type="email"] {
+    border-radius: 25px 25px 25px 25px;
+    padding-left: 0em;
+    text-align: center;
+    min-width: 350px;
+    font-size: 1.15em;
+  }
+  .newsletter input[type="submit"] {
+    border-radius: 25px 25px 25px 25px;
+    color: #fff;
+    padding: 0.89975em 1.5em 0.89975em;
+    margin-top: 1em;
+    font-size: 1.10em;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .newsletter input[type="email"] {
+    min-width: 280px;
+  }
+}
+
+/******* MAILCHIMP *******/
+/*************************/
+/******************************/
+/*********** FOOTER ***********/
+footer {
+  background-color: #1e1e1e;
+  padding-bottom: 2em !important;
+  text-align: center;
+  color: #a5a5a5;
+}
+
+.main-footer {
+  padding-top: 5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #323232;
+}
+
+.infos-legales {
+  padding-top: 1.5em;
+}
+
+.liens-contact a {
+  font-size: 1.4em;
+  font-family: 'Raleway-Regular';
+  color: #fff;
+  -webkit-transition: fill .2s ease-in-out;
+}
+
+/*
+#nav li a {
+  font-family: 'Raleway-Light' , Helvetica, sans-serif;
+}
+*/
+
+.liens-contact a:hover , .liens-contact a:focus, .liens-contact a:active{
+  color:#03E8FC;
+  -webkit-transition: fill .2s ease-in-out;
+}
+
+.liens-contact {
+  margin-bottom: 0.7em;
+}
+
+.contact {
+  margin-top: 5em;
+}
+
+footer h2 {
+  color: #ffffff;
+  font-size: 1.5em;
+  font-family: 'Raleway-Medium'; 
+  margin-bottom: 1.4em;
+}
+
+footer .social-media {
+  margin-left: -0.4em;
+}
+
+footer li {
+  list-style: none;
+  display: inline-block;
+  float: none;
+}
+
+footer .social-media a svg {
+    width: 30px;
+}
+
+footer .social-media .mail svg {
+  position: relative;
+    top: 4px;
+    width: 33px;
+    margin-right: 2.4em;
+}
+footer .social-media .facebook svg {
+  position: relative;
+    top: 4px;
+    width: 35px;
+    margin-right: 2.4em;
+}
+footer .social-media .twitter svg {
+    margin-right: 2.8em;
+}
+
+footer .social-media a:hover.mail path{
+      fill: #FFF;
+      -webkit-transition: fill .2s ease-in-out;
+}
+footer .social-media a:hover.twitter path{
+      fill: #FFF;
+      -webkit-transition: fill .2s ease-in-out;
+}
+footer .social-media a:hover.linkedin path{
+      fill: #FFF;
+      -webkit-transition: fill .2s ease-in-out;
+}
+footer .social-media a:hover.facebook path{
+      fill: #FFF;
+      -webkit-transition: fill .2s ease-in-out;
+}
+
+li a {
+  color:#8d98a1;
+}
+
+li a:hover {
+  color: #fff;
+}
+
+.liste-fin-footer li a:hover , .liste-fin-footer li a:active , .liste-fin-footer li a:focus {
+  color: #fff;
+}
+
+li.special-li {
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+.liste-fin-footer li {
+  margin-bottom: 0px !important;
+}
+
+
+ul.liste-fin-footer {
+  margin-bottom: 0px !important;
+  margin-left: 1em;
+  margin-right: 1em;
+
+}
+
+ul.social-media {
+  margin-bottom: 1.5em;
+}
+
+footer p {
+  color: #8d98a1;
+  margin-bottom: 1em;
+  font-family: 'Raleway-Regular';
+}
+footer  a p:hover {
+  color: #FFF;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+.contact a {
+  display: inline-block;
+}
+
+
+.liste-fin-footer p {
+  font-size: 1.1em;
+}
+
+.liste-fin-footer a {
+  font-size: 1.1em;
+  font-family: Raleway-Regular;
+}
+
+
+.img-banane {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+
+.img-banane img {
+  max-width: 120px;
+}
+
+@media screen and (max-width:768px) {
+  .img-banane img {
+    display: none;
+  }
+}
+
+/********** FIN FOOTER ***********/

@@ -1,0 +1,20 @@
+/*
+Theme Name:     t-sixteen-child-theme
+Description:    t-sixteen-child-theme
+Author:         Sebastien
+Template:       twentysixteen
+
+(optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
+*/
+
+
+#loader { 
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  z-index: 999; 
+  width: 100%; 
+  height: 100%; 
+  overflow: visible; 
+  background: #353251 url('https://www.wake-up.io/wp-content/themes/t-sixteen-child-theme/images/loading.gif') no-repeat center center; 
+}

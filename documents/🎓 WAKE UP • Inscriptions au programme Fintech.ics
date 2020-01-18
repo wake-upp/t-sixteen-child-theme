@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 12.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:PUBLISH
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:Lien d'inscription : https://www.wake-up.io/fintech/?cal\n\nLimité à 15 places. \nÉligible au CPF. \nAcompte de 837€ pour l'inscription.\n\nRappel des dates du programme :\n• 5 mars 2020 : cocktail d'ouverture\n• 7 mars : formation 9h - 17h\n• 14 mars : formation 9h - 17h\n• 21 mars : formation 9h - 17h\n• 28 mars : formation 9h - 17h\n• 31 mars : dîner de clôture
+DTEND:20200115T210000Z
+DTSTART:20200115T090000Z
+LOCATION:41 rue du Faubourg Montmartre, 75009 Paris
+PRIORITY:5
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-us:🎓 WAKE UP • Inscriptions au programme Fintech
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E008000000008062306C6261CA01000000000000000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MS-OLK-ALLOWEXTERNCHECK:TRUE
+X-MS-OLK-AUTOFILLLOCATION:FALSE
+X-MS-OLK-CONFTYPE:0
+BEGIN:VALARM
+TRIGGER:-PT1440M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,888 @@
+/*
+Theme Name:     t-sixteen-child-theme
+Description:    t-sixteen-child-theme
+Author:         Sebastien
+Template:       twentysixteen
+
+(optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
+*/
+
+.page-ikigai {
+	background-color: #03e8fd;
+}
+
+
+/******************************/
+/******************************/
+/*********** INTRO ************/
+
+.slide2-iki h2 {
+	font-family: 'Raleway-Bold';
+	margin-bottom: 1em;
+}
+.slide2-iki .col-md-7 {
+	text-align: center;
+}
+img.maison-ikigai {
+	width: 80%;
+}
+
+@media screen and (max-width: 769px) {
+	img.maison-ikigai {
+		max-width: 300px;
+	}
+	
+	.page-ikigai .middle-container {
+		text-align: center !important;
+	}
+	.container-text-maison {
+		text-align: left !important;
+	}
+	
+}
+
+
+/*********** INTRO ************/
+/******************************/
+/******************************/
+/************ HOW *************/
+.slide3-iki .container-fluid {
+	max-width: 100%;
+	padding-right: 0;
+	padding-left: 0;
+}
+.slide3-iki .col-sm-5 {
+	padding-left: 0;
+}
+.slide3-iki {
+	background-color: #f5e873;
+}
+.slide3-iki h2 {
+	font-family: 'Raleway-Bold';
+	margin-bottom: 1em;
+}
+.slide3-iki p {
+	font-size: 1.5em;
+	margin-bottom: 1.1em;
+}
+.container-tools-ikigai {
+	margin-top: -3em;
+}
+.text-tools-ikigai {
+	margin-top: 10em;
+	margin-bottom: 2em;
+	padding-left: 3em !important;
+	padding-right: 3em !important;
+}
+
+@media screen and (max-width: 769px) {
+	.text-tools-ikigai {
+		margin-top: 2em;
+		margin-bottom: 4em;
+	}
+	img.tools-ikigai {
+		max-width: 300px;
+	}
+}
+
+
+/************ HOW *************/
+/******************************/
+/******************************/
+/************ WHAT ************/
+
+.slide4-iki {
+	background-color: #343151;
+	text-align: center;
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+.slide4-iki .col-sm-4 {
+
+}
+.slide4-iki .clearfix {
+	margin-bottom: 4em;
+}
+.slide4-iki p {
+	color: #ffffff;
+	font-family: 'Raleway-Bold';
+	font-size: 1.3em;
+}
+.slide4-iki h2 {
+	color: #ffffff;
+	font-family: 'Raleway-Bold';
+	font-size : 2.3em;
+}
+img.ico-ikigai {
+	max-width: 120px;
+}
+
+@media screen and (max-width: 768px) {
+	.slide4-iki .clearfix {
+		margin-bottom: 0em;
+	}
+	.slide4-iki .col-sm-4 {
+		margin-bottom: 1.8em;
+	}
+}
+
+
+/************ WHAT ************/
+/******************************/
+/******************************/
+/************ PROF ************/
+
+.slide5-iki .col-sm-10 , .slide5-iki .col-md-8 {
+	background-color: #ffffff;
+}
+
+.slide5-iki h3 {
+	font-size: 1.4em;
+	line-height: 1.5em;
+	font-family: 'Raleway-Bold';
+}
+
+.profs-1 .col-md-7 {
+	width: 50%;
+	margin-left: -15em;
+}
+
+.slide5-iki h2 {
+	font-family: 'Raleway-Bold';
+	color: #03e8fd;
+	font-size : 2.5em;
+	margin-bottom: 1em;
+}
+.slide5-iki h4 {
+	font-family: 'Raleway-Bold';
+	color: #03e8fd !important;
+	font-size : 1.5em;
+	margin-bottom: 0.5em;
+}
+.slide5-iki .middle-container {
+	position: absolute;
+}
+.quotes {
+	margin-left: -8em;
+}
+img.photo-anais-seb {
+	max-height: 500px;
+	min-width: auto;
+}
+
+.droite-blanc {
+	max-width: 800px;
+}
+
+.profs-1 {
+	padding-top: 5em;
+}
+
+.quote {
+	background-color: #f5e873;
+	position: absolute;
+	min-width: 360px;
+}
+.quote div {
+	display: inline-block;
+}
+.quote p {
+	margin:0px;
+	font-size: 1.4em;
+}
+.quote-txt {
+	width: 80%;
+}
+.quote-txt a {
+	color :#ff0055;
+	-webkit-transition: all .2s ease-in-out;
+}
+.quote-txt a:hover , .quote-txt a:focus , .quote-txt a:active {
+	color :#03e8fd;
+	-webkit-transition: all .2s ease-in-out;
+}
+.quote-ico {
+	width: 18%;
+	text-align: center;
+}
+img.ico-quote {
+	max-width: 30px;
+}
+.quote-haut {
+	left:-280px;
+	top:80px;
+}
+.quote-haut p {
+	margin: 15px 0px 15px 15px;
+}
+.quote-bas {
+	right:-320px;
+	bottom:50px;
+}
+.quote-bas p {
+	margin: 15px 15px 15px 0px;
+	text-align: right;
+}
+
+.profs-2 {
+	padding-top: 2em;
+	padding-left: 2em;
+	padding-bottom: 4em;
+}
+.profs-2 h3 {
+	padding-right: 3em;
+}
+.profs-2 p {
+	font-size: 1.3em;
+}
+.profs-2 .col-sm-6 {
+	margin-bottom: 2em;
+}
+
+@media screen and (max-width: 1220px) {
+	.quotes {
+		margin-left: -3em;
+	}
+	.quote-haut {
+		left:-130px;
+		top:110px;
+	}
+	.quote-bas {
+		right:-320px;
+		bottom:30px;
+	}
+	.profs-1 .col-md-7 {
+		width: 50%;
+		margin-left: -18em;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.quotes {
+		margin-left: -3em;
+		text-align: center;
+		padding-top: 3em;
+	}
+	.quote {
+		max-width: 280px;
+	}
+	.quote-haut {
+		left:-130px;
+		top:120px;
+	}
+	.quote-bas {
+		right:-320px;
+		bottom:10px;
+	}
+
+}
+
+@media screen and (max-width: 772px) {
+	.quote {
+		background-color: #f5e873;
+		position: absolute;
+		min-width: 360px;
+	}
+	.quotes {
+		margin-left: 0em;
+	}
+	.quote-haut {
+		left:0px;
+		top:110px;
+	}
+	.quote-bas {
+		right:0px;
+		bottom:20px;
+	}
+	.profs-2 {
+		padding-top: 2em;
+		padding-left: 0em;
+		padding-bottom: 4em;
+	}
+	.page-ikigai .slide2 {
+		padding-top: 0em !important;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.quote {
+		background-color: #f5e873;
+		position: absolute;
+		min-width: 300px;
+	}
+	.quote p {
+		font-size: 1.2em;
+	}
+	.profs-2 h3 {
+		padding-right: 1em;
+	}
+
+	.profs-1 {
+		padding-top: 3em;
+	}
+	.profs-2 {
+		padding-bottom: 3em;
+	}
+}
+
+
+/************ PROF ************/
+/******************************/
+/******************************/
+/************ PROG ************/
+
+.slide6-iki {
+	background-color: #343151;
+	padding-top: 6em;
+	padding-bottom: 6em;
+}
+.intro-prog-iki {
+	color: #ffffff;
+	margin-bottom: 3em;
+}
+.intro-prog-iki h2 {
+	margin-top: 0px;
+	font-family: 'Raleway-Bold';
+}
+.intro-prog-iki p {
+	font-family: 'Raleway-Bold';
+	font-size: 1.4em;
+}
+.intro-2-prog-iki {
+	margin-top: 5em;
+	margin-bottom: 4em;
+}
+.intro-2-prog-iki h3 {
+	color: #03e8fd;
+	font-family: 'Raleway-Bold';
+	margin-top: 0px;
+}
+.a-gauche {
+	text-align: left;
+}
+.a-droite {
+	text-align: right;
+}
+
+.banniere-prog {
+	width: 100%;
+	background-color: #f5e873;
+	text-align: center;
+}
+.banniere-prog img {
+	max-width: 1050px;
+}
+.details-ateliers-iki p {
+	color: #ffffff;
+	font-size: 1.25em;
+}
+.details-ateliers-iki p:first-child {
+	color: #03e8fd;
+	font-family: 'Raleway-Bold';
+}
+.details-ateliers-iki div {
+	width: 85%;
+	height: 100%;
+	float: left;
+}
+.details-ateliers-iki div:first-child {
+	float: left;
+	width: 15%;
+	margin-top: -1em;
+}
+.details-ateliers-iki img {
+	max-width: 50px;
+}
+
+.container-details-atelier div:first-child {
+	margin-bottom: 2em ;
+}
+
+@media screen and (max-width: 768px) {
+	.container-details-atelier div:first-child {
+		margin-bottom: 0em ;
+	}
+	.details-ateliers-iki div {
+		margin-bottom: 2em;
+	}
+	.intro-prog-iki h2 {
+		margin-bottom: 1em;
+	}
+	.details-ateliers-iki div:first-child {
+		text-align: center;
+	}
+}
+.prog-vert-iki {
+	display: none;
+	width: 100%;
+}
+.prog-horiz-iki {
+	width: 100%;
+}
+@media screen and (max-width: 700px) {
+	.prog-horiz-iki {
+		display: none;
+	}
+	.prog-vert-iki {
+		display: initial;
+	}
+}
+@media screen and (max-width: 510px) {
+	.a-droite {
+		text-align: left;
+	}
+	.details-ateliers-iki div {
+		width: 100%;
+		float: left;
+	}
+	.details-ateliers-iki div:first-child {
+		float: left;
+		width: 100%;
+		margin-top: 0em;
+		margin-bottom: 1em;
+		text-align: left;
+	}
+	.intro-2-prog-iki {
+		margin-top: 4em;
+		margin-bottom: 2em;
+	}
+	.slide6-iki {
+		background-color: #343151;
+		padding-top: 4em;
+		padding-bottom: 3em;
+	}
+
+}
+
+/************ PROG ************/
+/******************************/
+/******************************/
+/*********** ALUMNI ***********/
+.temoignages-iki {
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+.temoignages-iki h2 {
+	text-align: center;
+	font-family: 'Raleway-Black';
+	color: black;
+	margin-bottom: 2em;
+}
+.temoignages-iki iframe {
+	position: relative;
+	z-index: 3;
+}
+.temoignages-iki .col-sm-5 {
+	background-color: white;
+	border-radius: 15px;
+	padding: 2em 2em 2em 5em;
+	margin-top: 13em;
+	margin-left: -4em;
+	position: relative;
+	z-index: 1;
+}
+.temoignages-iki p {
+	font-size: 1.3em;
+	font-style: italic;
+}
+p.nom-alumni {
+	font-style:normal;
+	font-family: 'Raleway-Black';
+}
+.temoignages-iki .clearfix {
+	margin-bottom: 2em;
+}
+
+@media screen and (max-width: 768px) {
+	.temoignages-iki {
+		text-align: center;
+	}
+	.temoignages-iki .col-sm-5 {
+		background-color: white;
+		border-radius: 15px;
+		padding: 5em 2em 2em 2em;
+		margin-top: -5em;
+		margin-left: 0em;
+		position: relative;
+		z-index: 1;
+	}
+}
+
+/*********** ALUMNI ***********/
+/******************************/
+/******************************/
+/********* NOT FOR U **********/
+
+.slide7-iki {
+	background-color: #ffffff;
+	padding-top: 5em;
+	padding-bottom: 5em;
+}
+
+.slide7-iki h2 {
+	color: #000000;
+	font-family: 'Raleway-Bold';
+	font-size: 2.2em;
+	margin-left: 45px;
+	margin-bottom: 0.5em;
+}
+
+.slide7-iki a {
+	color: #ff0055;
+}
+
+.slide7-iki h3 {
+	color: #000000;
+	font-family: 'Raleway-Bold';
+	font-size: 1.5em;
+	margin-left: 30px;
+	margin-bottom: 2em;
+}
+
+.title-not-for-u {
+	background-color: #f5e873;
+	
+	margin-bottom: 0.3em;
+}
+
+.title-not-for-u p {
+	font-family: 'Raleway-Bold';
+	padding : 15px 15px 15px 15px;
+}
+
+.slide7-iki p {
+	font-size: 1.2em;
+	padding : 15px 15px 15px 15px;
+}
+
+.slide7-iki img {
+	margin-right: -3em;
+	min-width: 160%;
+}
+
+.col-md-9 .clearfix div:first-child {
+	padding-right: 40px;
+}
+
+@media screen and (max-width: 1340px) {
+	.slide7-iki img {
+		margin-right: -3em;
+		min-width: 130% !important;
+		position: absolute;
+		top: 80px;
+	}
+}
+
+@media screen and (max-width: 1220px) {
+	.slide7-iki img {
+		margin-right: -3em;
+		min-width: 100% !important;
+		position: absolute;
+		top: 130px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.slide7-iki img {
+		margin-right: 0em;
+		min-width: 100%;
+		top: 230px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.slide7-iki img {
+		margin-right: 0em;
+		min-width: 40% !important;
+		max-width: 200px;
+		position: relative;
+		top: 0px;
+	}
+	.slide7-iki .col-sm-4 {
+		text-align: center;
+	}
+	.col-md-9 .clearfix div:first-child {
+		padding-right: 15px;
+	}
+	.slide7-iki .col-sm-6 {
+		padding-left: 0px !important;
+	}
+	.slide7-iki .container-fluid {
+		padding-left: 0px !important;
+		
+	}
+	.slide7-iki h2 {
+		font-size: 2em;
+		padding-left: 30px;
+		margin-left: 0px;
+		padding-right: 15px;
+	}
+	.slide7-iki h3 {
+		color: #000000;
+		font-family: 'Raleway-Bold';
+		font-size: 1.5em;
+		margin-left: 15px;
+		margin-bottom: 2em;
+	}
+
+	.slide7-iki {
+		padding-top: 3em;
+		padding-bottom: 2em;
+	}
+
+}
+
+/********* NOT FOR U **********/
+/******************************/
+/******************************/
+/********* POSTULER ***********/
+
+.slide8-iki {
+	text-align: center;
+	padding-top: 5em;
+	padding-bottom:7em;
+}
+.slide8-iki h2 {
+	font-family: 'Raleway-Bold';
+	color: #342f51;
+}
+.slide8-iki h3 {
+	font-family: 'Raleway-Bold';
+	font-size: 2em;
+	margin-top: 0em;
+	margin-bottom: 1em;
+	color: #342f51;
+}
+.slide8-iki h4 {
+	color: #ffffff;
+	font-family: 'Raleway-Bold';
+	margin-bottom: 2em;
+	font-size: 1.4em;
+}
+.slide8-iki p {
+	font-size: 1.3em;
+}
+.slide8-iki img {
+	max-width: 90px;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+.bande-inscription div {
+	float: left;
+}
+.bande {
+	width: 35%;
+}
+.text-bande {
+	width: 30%;
+	font-family: 'Raleway-Black';
+	font-size: 2em;
+	color: #ffffff;
+}
+
+.asp_product_item_top , .asp_product_description , .asp_price_container {
+	display: none;
+}
+
+.asp_product_item {
+	border: 0px !important;
+	box-shadow: none !important;
+}
+
+button.cta-payment {
+	color: #ffffff;
+    font-size: 1.7em;
+    font-family: 'Raleway-Bold';
+    padding: 0.8em 1.2em 0.8em 1.2em;
+    border-radius: 0.4em;
+    letter-spacing: 0em;
+    background-color: #FF0054;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+button.cta-payment:hover , button.cta-payment:active , button.cta-payment:focus {
+	background-color: #F5E873;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+	.bande-inscription div {
+		float: initial;
+	}
+	.bande {
+		width: 100%;
+	}
+	.text-bande {
+		width: 100%;
+	}
+	.slide8-iki h3 {
+		margin-top: 1em;
+	}
+}
+
+/********* POSTULER ***********/
+/******************************/
+/******************************/
+/******** POSTULER v2 *********/
+
+.page-ikigai p.titre-pictos {
+	color: #342f51;
+	font-size: 1.4em;
+}
+
+.page-ikigai .slide8-iki hr {
+    margin-top: 11px !important;
+    border-top-color: #5a5868 !important;
+}
+
+.page-ikigai .intro-dates h2 {
+	font-family: 'Raleway-Regular';
+	font-size: 1.3em;
+	margin-bottom: 1em;
+}
+.page-ikigai .dates {
+	margin-bottom: 2.5em;
+}
+.page-ikigai .slide6-prix h2 {
+	font-size: 1.7em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.page-ikigai .slide6-prix p {
+	font-size: 1.3em;
+	margin-top: 0.5em;
+}
+.page-ikigai .slide6-prix {
+	margin-bottom: 2em;
+}
+.page-ikigai a.cta-candidature:hover, a.cta-candidature:focus, a.cta-candidature:active {
+	background-color: #353152;
+}
+.page-ikigai .dates h2 {
+	margin-bottom: 1em;
+}
+.page-ikigai .dates p {
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 992px) {
+	.page-ikigai .dates .col-md-4 {
+		margin-bottom: 2.5em;
+	}
+	.page-ikigai .dates {
+		margin-bottom: 0em;
+	}
+	.page-ikigai .slide6-lignes {
+		margin-bottom: -0.5em;
+	}
+}
+/******************************/
+/************ MEDIA ***********/
+
+.slide-G {
+    background-color: #f5f5f5;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    text-align: center;
+}
+
+.slide-G h2 {
+    font-family: 'Raleway-Bold';
+    margin-bottom: 1.5em;
+}
+
+.slide-G .container-fluid {
+    max-width: 1050px;
+}
+
+.slide-G img {
+    padding-left: 3em;
+    padding-right: 3em;
+
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    -webkit-transition: fill .2s ease-in-out;
+}
+
+.slide-G img:hover {
+    -webkit-filter: initial;
+    filter: initial;
+    -webkit-transition: fill .2s ease-in-out;
+}
+
+@media  screen and (max-width: 768px) {
+    .slide-G img {
+        max-width: 250px;
+        margin-bottom: 3em;
+    }
+    img.logo-ud {
+        margin-bottom: 1.5em;
+    }
+    .slide-G {
+        padding-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .slide-G img {
+        margin-bottom: 1.5em;
+    }
+    .slide-G h2 {
+        margin-bottom: 0.5em;
+    }
+    .slide-G {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+}
+
+/************ MEDIA ***********/
+/******************************/
+/******************************/
+/************ CORPO ***********/
+.iki-corp {
+	background-color: #00E8FE;
+	padding-top: 5em;
+	padding-bottom: 5em;
+}
+.container-ico-corpo {
+	text-align: right;
+}
+.ico-corpo {
+	max-width: 100px;
+}
+.container-txt-corpo {
+	text-align: left;
+}
+.container-txt-corpo h2 {
+	color: white;
+	font-size: ;
+	font-family: 'Raleway-Black';
+	margin-bottom: 0.8em;
+}
+.container-txt-corpo p {
+	color: black;
+	font-size: 1.4em;
+	font-family: 'Raleway-Bold';
+}
+a.cta-ikicorp {
+	color: #FF0054;
+}
+a.cta-ikicorp:hover , a.cta-ikicorp:active , a.cta-ikicorp:focus {
+	color: #FFF;
+	-webkit-transition: all .2s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+	.container-txt-corpo {
+		text-align: center;
+	}
+	.container-ico-corpo {
+		text-align: center;
+	}
+}
+/************ CORPO ***********/
+/******************************/
+/******************************/
+
+
+

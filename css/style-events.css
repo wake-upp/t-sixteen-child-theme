@@ -1,0 +1,349 @@
+/*
+Theme Name:     t-sixteen-child-theme
+Description:    t-sixteen-child-theme
+Author:         Sebastien
+Template:       twentysixteen
+
+(optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
+*/
+
+.page-events {
+	background-color: #ffffff;
+}
+
+/*********** LISTE ************/
+/******************************/
+/******************************/
+/*********** LISTE ************/
+
+
+.zone-logo-calendrier {
+	margin-top: -23em;
+	z-index: 30;
+	text-align: center;
+	position: relative;
+}
+
+img.calendar-events {
+	max-width: 7em;
+	margin-bottom: 0.5em;
+}
+
+.zone-events {
+	margin-top: 0em;
+	z-index: 30;
+}
+.inside-events {
+	padding-top: 4em;
+}
+
+.block {
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+
+/**** BLOCK START ****/
+/*********************/
+.block-start {
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+.block-start-droite {
+	float: right !important;
+	padding-left: 5px !important;
+	margin-bottom: 1em;
+}
+img.icon_past_events {
+	width: 30px;
+	margin-bottom: 3px;
+}
+.elements-past {
+	display: inline-block;
+}
+.block-start-droite .marge {
+	margin-right: 10px;
+}
+.block-start-gauche {
+	text-align: right;
+	padding-right: 5px !important;
+	margin-bottom: 1em;
+}
+.block-start-droite .content-event , .block-start-gauche .content-event {
+	height: 50px;
+}
+.past {
+	display: none;
+	opacity: 0.5;
+}
+#less-button {
+	display: none;
+}
+/*************************/
+/**** FIN BLOCK START ****/
+
+
+/**** BLOCK PAIR ****/
+/********************/
+.block-pair:nth-child(2) {
+	margin-top: 10em !important;
+}
+.block-pair:nth-child(2n+1) {
+	float: right !important;
+	padding-left: 5px !important;
+	margin-bottom: 5em;
+}
+.block-pair:nth-child(2n) {
+	text-align: right;
+	padding-right: 5px !important;
+	margin-bottom: 5em;
+}
+.block-pair:nth-child(2n+1) .marge {
+	margin-right: 10px;
+}
+.block-pair:nth-child(2n) .marge , .block-pair:nth-child(2n) .content-event {
+	float: right;
+}
+.block-pair:nth-child(2n) .marge {
+	margin-left: 10px;
+}
+/** FIN BLOCK PAIR **/
+/********************/
+/********************/
+/*** BLOCK IMPAIR ***/
+
+.block-impair:nth-child(2n+1) {
+	text-align: right;
+	padding-right: 5px !important;
+	margin-bottom: 5em;
+}
+.block-impair:nth-child(2n) {
+	float: right !important;
+	padding-left: 5px !important;
+	margin-bottom: 5em;
+}
+.block-impair:nth-child(2n) .marge {
+	margin-right: 10px;
+}
+.block-impair:nth-child(2n+1) .marge , .block-impair:nth-child(2n+1) .content-event {
+	float: right;
+}
+.block-impair:nth-child(2n+1) .marge {
+	margin-left: 10px;
+}
+
+/** FIN BLOCK IMPAIR **/
+/**********************/
+
+.marge {
+	width: 42px;
+	min-height: 1px;
+	float: left;
+	padding-top: 2px;
+}
+
+.content-event {
+	width: 80%;
+	float: left;
+	position: relative;
+}
+
+
+.dots-3 {
+	display: none;
+}
+
+@media screen and (max-width: 930px) {
+	.inside-events {
+		padding-top: 2em;
+	}
+	.zone-logo-calendrier {
+		margin-top: -17em;
+		z-index: 0;
+		text-align: center;
+		position: relative;
+	}
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+	.zone-events {
+		z-index: 0;
+	}
+
+
+	.header-button {
+		margin-bottom: 1em;
+	}
+
+	.header-button .elements-past p {
+		line-height: 1.2em !important;
+	}
+
+	.block-start {
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+	}
+	.block-start-droite {
+		float: initial !important;
+		text-align: center;
+		padding-left: initial !important;
+		margin-bottom: 1em;
+	}
+	.block-start-droite .marge {
+		margin-right: initial;
+	}
+	.block-start-gauche {
+		display: none;
+	}
+	.block-start-droite .content-event , .block-start-gauche .content-event {
+		height: initial;
+	}
+
+	.block-pair , .block-impair:nth-child(2n) , .block-impair:nth-child(2n+1){
+		float: initial !important;
+		text-align: left;
+		padding-left: 3px !important;
+		padding-right: 0px !important;
+		margin-bottom: 3em;
+	}
+
+	.block-impair:nth-child(2n+1) .marge, .block-impair:nth-child(2n) .marge {
+		margin-right: 10px;
+		margin-left: initial;
+	}
+
+	.block-pair:nth-child(2n+1) {
+		float: initial !important;
+		padding-left: 5px !important;
+		margin-bottom: 2em;
+	}
+
+	.block-pair:nth-child(2n) {
+		text-align: left;
+		padding-left: 5px !important;
+		padding-right: 0px;
+		margin-bottom: 2em;
+	}
+
+	.block-pair:nth-child(2n+1) .marge, .block-pair:nth-child(2n) .marge {
+		margin-right: 10px;
+		margin-left: initial;
+	}
+
+	.content-event {
+		float: left !important;
+		width: 88%;
+		display: inline-block;
+	}
+	.marge {
+		width: 24px;
+		float: left !important;
+		display: inline-block;
+	}
+
+	.block {
+		margin-bottom: 2em;
+	}
+	.dots-5 {
+		display: none;
+	}
+	.dots-3 {
+		display: initial;
+	}
+}
+
+@media screen and (max-width: 631px) {
+	.zone-events {
+		z-index: 40;
+	}
+}
+
+@media screen and (max-width: 373px) {
+	.content-event {
+		width: 85%;
+	}
+}
+
+.bottom-zone-events {
+	background-color: #ffffff;
+	text-align: center;
+	padding-top: 10px;
+}
+svg.rocket {
+	width: 35px;
+}
+
+.zone-events h2 {
+	font-family: 'Raleway-Black';
+	font-size: 1.85em;
+}
+.zone-events h3 {
+	font-size: 1.5em;
+	margin-top: 0em;
+	margin-bottom: 1em;
+}
+.zone-events p {
+	font-size: 1.2em;
+	line-height: 1.7em;
+}
+
+.content-event a {
+	color: #FC165B;
+	font-family: 'Raleway-Bold';
+	margin-top: 1em;
+	-webkit-transition: all .2s ease-in-out;
+}
+.content-event a:hover {
+	color: #000;
+	-webkit-transition: all .2s ease-in-out;
+}
+.content-event a:focus {
+	color: #FC165B;
+	outline: none;
+	text-decoration: none;
+}
+/*********** LISTE ************/
+/******************************/
+/******************************/
+/*** BRICOLAGE GOOGLE CACHE ***/
+
+.infos-events-cachees span {
+	color: #ffffff !important;
+	font-size: 3px;
+}
+.infos-events-cachees img {
+	max-width: 2px;
+}
+
+/*** BRICOLAGE GOOGLE CACHE ***/
+/******************************/
+/******************************/
+/*********** INSTA ************/
+
+.instagram {
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 4em;
+}
+
+.instagram h3 {
+	font-family: 'Raleway-Black';
+	font-size: 1.3em;
+	color: #8c97a1;
+	-webkit-transition: all .2s ease-in-out;
+}
+.instagram h3:hover {
+	color: #FC165B;
+	-webkit-transition: all .2s ease-in-out;
+}
+.instagram a:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+.instagram img {
+	max-width: 150px;
+	margin-right: 10px;
+}

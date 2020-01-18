@@ -1,0 +1,278 @@
+/******************************/
+/********** SLIDE 1 ***********/
+body {
+    position: relative;
+}
+.slide1 {
+    text-align: center;
+    padding-top: 12em;
+    padding-bottom: 35em;
+}
+.slide1 {
+    z-index: 5;
+    position: relative;
+}
+.slide1 .btn {
+    padding: 10px 16px 10px 16px;
+}
+img.logo-wakeup {
+    width: 140px;
+    position: absolute;
+    top: 2em;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+}
+img.img_info {
+    max-width: 70%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.dropdown .btn {
+  vertical-align: initial !important;
+}
+
+
+.dropdown-toggle {
+  display: initial !important;
+  position: initial !important;
+}
+
+/********** SLIDE 1 ***********/
+/******************************/
+
+.site-main {
+	background-color: #ffffff;
+}
+.content-wuconv {
+	background-color: #ffffff;
+    max-width: 1050px;
+    margin: auto;
+    z-index: 7;
+    position: relative;
+    margin-top: -28em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 4em;
+}
+
+h1 {
+	font-family: 'Raleway-Black';
+	color: #ffffff;
+	font-size: 1.7em;
+	display: none;
+}
+
+.header-wuconv h3 {
+	color: #000000;
+	font-family: 'Raleway-Light';
+	font-size: 1.12em;
+	margin-top: 2em;
+}
+.header-wuconv h2 {
+	color: #000000;
+	font-family: 'Raleway-Black';
+	font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.header-wuconv p {
+	color: #000000;
+	font-family: 'Raleway-Regular';
+	font-size: 1.12em;
+}
+
+.jackette-episode {
+	position: relative;
+}
+
+img.img-logo-wuconv {
+	
+}
+
+img.img-cover-episode {
+	max-width: 100%;
+}
+
+.btn-plateformes {
+	background-color: #ffffff;
+    border-radius: 0px 15px 0px 0px;
+    position: absolute;
+    padding: 4px 4px 0px 4px;
+    bottom: -10px;
+    left: 0;
+    width: 190px; 
+}
+
+img.logos-plateformes {
+	max-width: 25px;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+.details-episode h3 {
+	color: #5f5f5f;
+	font-family: 'Raleway-Light';
+	font-size: 1.12em;
+	margin-top: 2em;
+}
+
+.details-episode h2 {
+	color: #000000;
+	font-family: 'Raleway-Black';
+	font-size: 1.25em;
+}
+
+.details-episode p {
+	color: #000000;
+	font-family: 'Raleway-Regular';
+	font-size: 1.12em;
+}
+
+.btn-plateformes a:hover , .btn-plateformes a:active , .btn-plateformes a:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+/*** AJOUT ***/
+.inside-episode {
+    float: left;
+    max-width: 60%;
+    margin-left: 2em;
+}
+img.img-cover-episode {
+    max-width: 253px;
+}
+.details-episode h3 {
+    margin-top: 0em;
+}
+.episode-wuconv {
+    margin-top: 2em;
+}
+
+
+@media screen and (max-width: 860px) {
+    .inside-episode {
+        float: none;
+        max-width: 100%;
+        margin-left: 1em;
+    }
+    .details-episode h3 {
+        margin-top: 2em;
+    }
+    iframe {
+        margin-top: 1em;
+    }
+}
+/*** FIN AJOUTS ***/
+
+/********** SLIDE 1 ***********/
+/******************************/
+/******************************/
+/******** RESPONSIVE **********/
+
+@media screen and (max-width: 1120px) {
+    .slide1 {
+        padding-top: 12em;
+        padding-bottom: 35em;
+    }
+    .logo-head {
+        position: absolute;
+        top: 10px;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    img.logo-wakeup {
+        width: 140px;
+    }
+    .content-wuconv {
+        margin-top: -28em;
+    }
+}
+@media screen and (max-width: 992px) {
+    .logo-head {
+        position: absolute;
+        top: 10px;
+        margin-left: 1em;
+    }
+    .slide1 {
+        padding-top: 12em;
+        padding-bottom: 35em;
+    }
+    .content-wuconv {
+        margin-top: -28em;
+    }
+}
+@media screen and (max-width: 930px) {
+	h1	{
+		display: initial;
+	}
+	.slide1 {
+        padding-top: 11em;
+        padding-bottom: 35em;
+    }
+    .titre-pour-podcast {
+        position: absolute;
+        top: 160px;
+        left: 15px;
+        right: 15px;
+        z-index: 100;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767px) {
+    .logo-head {
+        position: relative;
+        text-align: center;
+        top: 10px;
+        margin-left: 0em;
+        margin-top: 1em;
+    }
+    .header-wuconv h3 {
+    	margin-top: 0em;
+    }
+    .slide1 {
+        padding-bottom: 40em;
+    }
+    .content-wuconv {
+        margin-top: -32em;
+    }
+    img.img-logo-wuconv {
+    	max-width: 300px;
+    	margin: auto;
+    }
+    .container-logo-wuconv {
+    	text-align: center;
+    }
+
+}
+@media screen and (max-width: 550px) {
+    .logo-head {
+        position: relative;
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        margin-left: 0px !important;
+    }
+    img.logo-wakeup {
+        width: 110px;
+    }
+    .slide1 {
+        padding-bottom: 40em;
+        padding-top: 9em;
+    }
+    .titre-pour-podcast {
+        top:130px;
+    }
+    .content-wuconv {
+        margin-top: -32em;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+}
+@media screen and (max-width: 400px) {
+    img.logo-wakeup {
+        width: 130px;
+    }
+}
