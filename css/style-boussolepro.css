@@ -35,25 +35,36 @@ p {
     font-family: 'Raleway-Regular';
 }
 
+.content-area {
+    overflow-x: hidden;
+}
+
+.btn-cta-boussolepro {
+    display: inline-block;
+    background-color: #ff0055;
+    border-radius: 25px;
+    color: #f9edcf;
+    padding: .5em 1.5em;
+    font-family: 'raleway-black';
+    text-transform: none;
+}
+.btn-cta-boussolepro:hover {
+    background-color: #ef0045;
+    color: #e9ddbf;
+}
+
 /******************************/
 /********** SLIDE 1 ***********/
 
-.intro-quote p {
-    color: #f9edcf;
-}
+
 
 .slide1 {
+    max-width: 100%;
     padding-top: 20em;
     padding-bottom: 5em;
 }
 .quote-item-container {
     margin-right: 1em
-}
-p.quote-item {
-    font-size:14em; 
-    font-family: 'Raleway-SemiBold' ; 
-    line-height:0.7em; 
-    margin-bottom:0em;
 }
 
 .quote-slide1 {
@@ -66,34 +77,14 @@ h1 {
     font-size: 2.7em;
     margin-top: 2em;
     padding-left: 0px;
-
 }
 
 p.txt-slide-1 {
     padding-left: 0px;
-    color:white; 
-    margin-top: 2.2em; 
-    font-size:1.3em; 
-    width:80%;
-}
-
-p.signature-right {
     color:white;
-    font-family: 'Raleway-Bold';
-    opacity: 20%;
-    font-size:1.5em;
-    line-height: 1.2em;
-    border-style:solid ;
-    border-width: 0px 1px 0px 0px;
-    border-color: white;
-    padding-right: 10px;
-    margin-top: 2em;
-    margin-right: 2em;
-    position: relative;
-
-    text-align: right; 
-    float:right; 
-    width: 100%
+    margin-top: 2.2em;
+    font-size:1.3em;
+    width:80%;
 }
 
 
@@ -146,8 +137,8 @@ img.logo-boussole-pro {
         vertical-align: middle;
     }
     p.txt-slide-1 {
-        margin-top: 2.2em; 
-        font-size:1.3em; 
+        margin-top: 2.2em;
+        font-size:1.3em;
         max-width: 500px;
     }
     .slide1 {
@@ -180,15 +171,153 @@ img.logo-boussole-pro {
     }
 }
 
+.carousel-app {
+    position: absolute;
+    top: 320px;
+    right: -50px;
+    width: 40%;
+}
+
+.carousel-app .carousel-inner {
+    border-radius: 20px;
+    border: solid #f9edcf 4px;
+}
+
+.carousel-app .carousel-indicators {
+    bottom: -70px;
+}
+
+.carousel-app .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #f9edcf;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.carousel-app .carousel-indicators li.active {
+    background-color: #ff0055;
+}
+
 /********** SLIDE 1 ***********/
 /******************************/
 /******************************/
-/********** SLIDE 2 ***********/
+/********** SLIDE TABS ***********/
 
-.slide2 {
-    background-color: #f9edcf;
-    padding-bottom: 0em;
+section.slide-tabs {
+    font-family: 'Raleway-SemiBold';
+    margin-bottom: 0px;
 }
+
+.tab-block {
+    margin-bottom: 120px;
+    cursor: pointer;
+}
+
+.tab1 {
+    background-color: #f68443;
+}
+
+.tab2 {
+    background-color: #151D78;
+}
+
+.tab3 {
+    background-color: #10B580;
+}
+
+.tab-block .content {
+    width: 60%;
+    margin-left: 40%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tab-block .number {
+    position: absolute;
+    font-size: 100px;
+    left: 10%;
+    color: rgba(0, 0, 0, .1);
+}
+
+.tab-block .content img {
+    width: 30%;
+}
+
+.tab-block .content h3 {
+    color: #f9edcf;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    margin-left: -70px;
+    border-top: 70px solid #f68443;
+    display: none;
+}
+
+.tab-block.active .arrow-down {
+    display: block;
+}
+
+.tab1 .arrow-down {
+    border-top-color: #f68443;
+}
+
+.tab2 .arrow-down {
+    border-top-color: #151D78;
+}
+
+.tab3 .arrow-down {
+    border-top-color: #10B580;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content h2 {
+    color: #f68443;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 30px auto;
+}
+
+.tab-content ul {
+    list-style: none; /* Remove default bullets */
+}
+
+.tab-content ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #f68443; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.tab-content li {
+    font-weight: 600;
+}
+
+.tab-content video {
+    margin-bottom: 0;
+}
+
+/********** SLIDE TABS ***********/
+/******************************/
+/******************************/
+/********** SLIDE SEB ***********/
 
 .slide2 .container-fluid {
     max-width: 100%;
@@ -199,10 +328,11 @@ img.logo-boussole-pro {
 }
 
 .container-text-slide2 {
-    max-width: 600px; 
-    margin-left: 5em; 
-    margin-bottom: 2em; 
+    max-width: 600px;
+    margin-left: 5em;
+    margin-bottom: 2em;
     position: relative;
+    margin-top: 10%;
 }
 
 h2 {
@@ -224,6 +354,7 @@ h2.title-vision {
 
 p.details-vision {
     margin-bottom: 2em;
+    margin-top: 2em;
 }
 
 p.signature-left {
@@ -238,8 +369,8 @@ p.signature-left {
     padding-left: 10px;
     margin-top: 2em;
     margin-right: 2em;
-    position: relative;
-    margin-left: -3%;
+    position: absolute;
+    bottom: 7%;
 }
 
 .bloc-droite-seb {
@@ -265,8 +396,8 @@ img.line-uncertainty {
         width: 50%;
     }
     .container-text-slide2 {
-        margin-left: 0em; 
-        margin-bottom: 2em; 
+        margin-left: 0em;
+        margin-bottom: 2em;
     }
     .bloc-droite-seb {
         padding-top: 3em;
@@ -373,197 +504,59 @@ img.line-uncertainty {
     }
 }
 
-/********** SLIDE 2 ***********/
+/********** SLIDE SEB ***********/
 /******************************/
 /******************************/
-/********* SLIDE what *********/
+/********* SLIDE WE *********/
 
-.slide-what .container-fluid {
-    max-width: 100%;
-    padding: 0px;
-    margin-left: 20%;
-}
-.slide-what {
-    padding-top: 3em;
-    padding-bottom: 3em;
-}
-.slide-what .col-sm-8 , .slide-what .col-sm-6 {
-    padding: 0px;
+section.slide-we {
+    background-color: #f9edcf;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    margin-bottom: 0;
 }
 
-.slide-what h2 {
-    font-family: 'Raleway-Black';
+.slide-we h2 {
     color: #3dadad;
+    margin: 1em;
     font-size: 2.2em;
-    margin-top: 2em;
-    margin-bottom: 1em;
 }
 
-.slide-what p {
-    font-family: 'Raleway-Bold';
-    color: #1e1e1e;
-    font-size: 1.3em;
-    line-height: 1.65em;
-}
-
-.slide-what button {
-    background: #3dadad;
-    border: 0;
-    border-radius: 6px;
-    color: #fff;
-    
-    font-weight: 700;
-    letter-spacing: 0.046875em;
-    line-height: 1;
-    padding: 1em 1em 0.9em;
-    margin-top: 1em;
-}
-
-.slide-what a {
-    color: #ffffff;
-    font-family: "Raleway-Bold", sans-serif;
-    font-size:1.3em;
-}
-.slide-what button:hover {
-    background: #343151;
-    -webkit-transition: all .2s ease-in-out;
-}
-.slide-what button:focus , .slide-what a:focus {
-    outline: none;
-    text-decoration: none;
-}
-
-.section-mockup {
-    text-align: right;
-}
-
-
-@media screen and (max-width: 1350px) {
-    .slide-what .container-fluid {
-        margin-left: 50px;
-    }
-}
-@media screen and (max-width: 1170px) {
-    .slide-what h2 {
-        margin-top: 1em;
-    }
-    img.mockup-large {
-        margin-top: 1em;
-    }
-}
-
-img.mockup-mobile {
-    display:none;
-}
-
-@media screen and (max-width: 992px) {
-    img.mockup-large {
-        display:none;
-    }
-    img.mockup-mobile {
-        display:initial;
-    }
-}
-@media screen and (max-width: 768px) {
-    .slide-what .section-texte {
-        margin-left: 2.5em;
-        margin-right: 2.5em;
-    }
-    .slide-what .container-fluid {
-        margin-left: 0px;
-    }
-    
-    img.mockup-mobile {
-        margin-top: 1em;
-    }
-    .slide-what {
-        padding-bottom: 0em;
-    }
-    img.mockup-mobile {
-        display:none;
-    }
-    img.mockup-large {
-        display:initial;
-        margin-top: 2em;
-    }
-}
-@media screen and (max-width: 480px) {
-    .slide-what .section-texte {
-        margin-left: 1.5em;
-        margin-right: 1.5em;
-    }
-    .slide-what .section-mockup {
-        text-align: center;
-    }
-    img.mockup-large {
-        display:none;
-    }
-    img.mockup-mobile {
-        display:initial;
-    }
-}
-
-/********* SLIDE what *********/
-/******************************/
-/******************************/
-/********** SLIDE 3 ***********/
-
-.slide3 {
-    background-color:white;
-    padding-top: 6em;
-    padding-bottom: 6em;
-}
-
-.slide3 h2 {
+.slide-we .item {
     font-family: 'Raleway-Black';
-    color: #3dadad;
-    font-size: 2.2em;
+    margin-left: 2em;
     margin-bottom: 1em;
-}
-.slide3 p {
-    font-family: 'Raleway-Black';
-    color: #1e1e1e;
     font-size: 1.3em;
-    padding-left: 20px;
-    padding-top: 20px;
 }
-.items-pulse img , .items-pulse p {
-    float: left;
-}
-.items-pulse {
-    width: 100%;
-    margin-bottom: 1em;
-}
-img.ico-pulse {
-    width: 65px;
+
+.slide-we .item img {
+    width: 4em;
+    margin-right: 20px;
 }
 
 @media screen and (max-width: 910px) {
-    .slide3 p {
+    .slide-we .item {
         padding-top: 5px;
     }
 }
 @media screen and (max-width: 768px) {
-    h2.second-titre {
-        margin-top: 2em;
-    }
-    .slide3 {
+    .slide-we {
         margin-left: 10%;
     }
 }
 @media screen and (max-width: 600px) {
-    .slide3 {
+    .slide-we {
         margin-left: 1em;
         padding-right: 1em;
     }
-    .slide3 .middle-container {
+    .slide-we .middle-container {
         display: table;
         position: relative;
         padding-top: 0em;
         padding-bottom: 0em;
     }
 
-    .slide3  .middle-text {
+    .slide-we  .middle-text {
         float: none !important;
         display: table-cell;
         vertical-align: middle;
@@ -573,128 +566,173 @@ img.ico-pulse {
     }
 }
 @media screen and (max-width: 380px) {
-    .slide3 {
+    .slide-we {
         margin-left: 0em;
         padding-right: 0em;
         padding-top: 3em;
         padding-bottom: 3em;
     }
 }
-/********** SLIDE 3 ***********/
+
+/********* SLIDE WE *********/
 /******************************/
 /******************************/
-/********** SLIDE 4 ***********/
+/********* SLIDE PLAN **********/
 
-.slide4 .container-fluid {
-    max-width: 1300px;
+section.slide-plan {
+    padding-bottom: 8em;
+    padding-top: 2em;
+    background-color: rgba(250,250,250,1);
 }
 
-.slide4 h2 {
-    font-size: 2.3em;
-    color: white;
-    font-family: 'Raleway-Black';
-    margin-top: 0px;
-}
-
-.slide4 {
+.slide-plan h1 {
+    color: #3dadad;
     text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
 
-.slide4 p {
-    color: white;
+.card {
+    display: inline-flex;
+    width: 30%;
+    min-width: 290px;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card.enterprises {
+    background-color: #3dadad;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-title {
+    font-family: 'Raleway-Bold';
+    margin-bottom: 2px;
     font-size: 1.5em;
 }
 
-.slide4 img {
-    height: 100%;
+.enterprises .card-title {
+    color: #f9edcf;
 }
 
-.slide4 button {
-    background: #ff0055;
-    border: 0;
-    border-radius: 6px;
-    color: #fff;
-    
-    font-weight: 700;
-    letter-spacing: 0.046875em;
-    line-height: 1;
-    padding: 1em 1em 0.9em;
-    margin-top: 2em;
+.card-subtitle {
+    font-family: 'Raleway-Bold';
+    color: grey;
+    font-size: .9em;
 }
 
-.slide4 a {
-    color: #ffffff;
-    font-family: "Raleway-Bold", sans-serif;
-    font-size:1.6em;
-}
-.slide4 button:hover {
-    background: #343151;
-    -webkit-transition: all .2s ease-in-out;
-}
-.slide4 button:focus , .slide4 a:focus {
-    outline: none;
-    text-decoration: none;
+.price {
+    font-family: Raleway-Black;
+    color: #3dadad;
+    font-size: 3em;
+    position: relative;
 }
 
-@media screen and (max-width: 1000px) {
-    .hidden-sm {
-        display: none;
-    }
-    .slide4 .col-sm-4 {
-        width: 50%;
-    }
+.price .symbol {
+    content: "€";
+    font-size: .4em;
+    position: absolute;
+    left: -1em;
+    top: .6em;
 }
 
-@media screen and (min-width: 768px) {
-    .middle-container {
-        display: table;
-        position: relative;
-        padding-top: 0em;
-        padding-bottom: 0em;
-    }
-
-    .middle-text {
-        float: none !important;
-        display: table-cell;
-        vertical-align: middle;
-    }
+.price .times {
+    font-size: .35em;
+    color: #f68443;
+    font-family: Raleway-bold;
 }
 
-@media screen and (max-width: 768px) {
-    .hidden-sm {
-        display: none;
-    }
-    .slide4 {
-        padding-left: 2em;
-        padding-right: 2em;
-    }
+.card-text {
+    line-height: 1.2em;
+    font-size: .9em;
+    margin-top: 10px;
 }
 
-@media screen and (max-width:  700px) {
-    .slide4 .clear {
-        text-align: left;
-    }
-
+.enterprises .card-text {
+    color: white;
+    margin-top: 3.2em;
 }
 
-@media screen and (max-width: 380px) {
-
-    .slide4 {
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-    }
-
-    .slide4 a {
-        font-size:1.4em;
-    }
+.card .btn-cta-boussolepro {
+    font-family: 'Raleway-Bold';
+    padding: .3em 1.5em;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-footer .container-fluid {
+.enterprises .btn-cta-boussolepro {
+    background-color: white;
+    color: #ff0055;
+}
+
+.enterprises .btn-cta-boussolepro:hover {
+    background-color: #efefef;
+    color: #ef0045;
+}
+
+/********* SLIDE PLAN **********/
+/******************************/
+/******************************/
+/********** SLIDE ANAIS ***********/
+
+section.slide-anais {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
     max-width: 100%;
+    padding-top: 12em;
 }
 
+.quote-anais {
+    position: relative;
+    font-family: 'Raleway-BlackItalic';
+    color: #f9edcf;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 1.5em;
+}
 
-/********** SLIDE 4 ***********/
+.quote-mark {
+    position: absolute;
+    left: -.6em;
+    top: -.1em;
+    font-size: 4em;
+    font-family: 'Raleway-Bold';
+    line-height: 1em;
+}
+
+.slide-anais img {
+    width: 6em;
+}
+
+p.signature-right {
+    color:white;
+    font-family: 'Raleway-Bold';
+    opacity: 20%;
+    font-size:1.5em;
+    line-height: 1.2em;
+    border-style:solid ;
+    border-width: 0px 1px 0px 0px;
+    border-color: white;
+    padding-right: 10px;
+    margin-top: 9em;
+    position: relative;
+    text-align: right;
+    float:right;
+    width: 100%
+}
+
+/********** SLIDE ANAIS ***********/
 /******************************/
 /******************************/
 /******** RESPONSIVE **********/

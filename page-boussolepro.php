@@ -10,30 +10,30 @@ get_header(); ?>
 
 
 <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Organization",
-  "url": "https://www.wake-up.io",
-  "logo": "https://www.wake-up.io/wp-content/themes/t-sixteen-child-theme/images/HOMEPAGE/logo-wake-up-square.jpg",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "41 rue du Faubourg Montmartre",
-    "addressLocality": "Paris",
-    "addressRegion": "Île-de-France",
-    "postalCode": "75009",
-    "addressCountry": "FR"
-  },
-  "contactPoint": [{
-    "@type": "ContactPoint",
-    "telephone": "+33 1 76 35 02 24",
-    "contactType": "customer service"
-  }],
-  "image": [
-    "https://www.wake-up.io/wp-content/themes/t-sixteen-child-theme/images/PHOTOS/Espace-bas.jpg",
-    "https://www.wake-up.io/wp-content/themes/t-sixteen-child-theme/images/PHOTOS/Bas-conf.jpg",
-    "https://www.wake-up.io/wp-content/themes/t-sixteen-child-theme/images/PHOTOS/Haut.jpg"
-  ]
-}
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "https://www.wake-up.io",
+        "logo": "https://www.wake-up.io/wp-content/themes/t-sixteen-child-theme/images/HOMEPAGE/logo-wake-up-square.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "41 rue du Faubourg Montmartre",
+            "addressLocality": "Paris",
+            "addressRegion": "Île-de-France",
+            "postalCode": "75009",
+            "addressCountry": "FR"
+        },
+        "contactPoint": [{
+            "@type": "ContactPoint",
+            "telephone": "+33 1 76 35 02 24",
+            "contactType": "customer service"
+        }],
+        "image": [
+            "https://www.wake-up.io/wp-content/themes/t-sixteen-child-theme/images/PHOTOS/Espace-bas.jpg",
+            "https://www.wake-up.io/wp-content/themes/t-sixteen-child-theme/images/PHOTOS/Bas-conf.jpg",
+            "https://www.wake-up.io/wp-content/themes/t-sixteen-child-theme/images/PHOTOS/Haut.jpg"
+        ]
+    }
 </script>
 
 
@@ -44,47 +44,38 @@ get_header(); ?>
 <style type="text/css">
 
     @font-face {
-		font-family: Raleway-BlackItalic;
-		src: url('<?php echo bloginfo('stylesheet_directory').'/fonts/Raleway/Raleway-BlackItalic.ttf';?>');
-		font-weight: normal;
-	}
+        font-family: Raleway-BlackItalic;
+        src: url('<?php echo bloginfo('stylesheet_directory').'/fonts/Raleway/Raleway-BlackItalic.ttf';?>');
+        font-weight: normal;
+    }
 
-	@font-face {
-		    font-family: Raleway-Italic;
-		    src: url('<?php echo bloginfo('stylesheet_directory').'/fonts/Raleway/Raleway-Italic.ttf';?>');
-		    font-weight: normal;
-		}
+    @font-face {
+        font-family: Raleway-Italic;
+        src: url('<?php echo bloginfo('stylesheet_directory').'/fonts/Raleway/Raleway-Italic.ttf';?>');
+        font-weight: normal;
+    }
 
     body {
         font-family: "Raleway", Helvetica, Arial, sans-serif !important;
         background-color: #FFFFFF;
     }
 
-    .slide1 {
+    .slide-anais {
         background: url("<?php echo bloginfo('stylesheet_directory').'/images/TALENT/bg-anais-light-v2.jpg';?>");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        background-color: #FFFFFF;
-        background-attachment: fixed;
+    }
+
+    .slide1.header {
+        background: url("<?php echo bloginfo('stylesheet_directory').'/images/BOUSSOLE-PRO/header_bg.jpg';?>");
     }
 
     @media screen and (max-width: 600px) {
-    	.slide1 {
-    	    background: url("<?php echo bloginfo('stylesheet_directory').'/images/TALENT/bg-anais-mobile-light.jpg';?>");
-    	    background-repeat: no-repeat;
-    	    background-position: center center;
-    	    background-size: cover;
-    	    background-color: #FFFFFF;
-    	}
-    }
-
-    .slide4 {
-        background: url("<?php echo bloginfo('stylesheet_directory').'/images/TALENT/bg-cta-pulse-light.jpg';?>");
-        background-repeat: no-repeat;
-        background-position: bottom center;
-        background-size: cover;
-        background-color: #FFFFFF;
+        .slide1 {
+            background: url("<?php echo bloginfo('stylesheet_directory').'/images/TALENT/bg-anais-mobile-light.jpg';?>");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-color: #FFFFFF;
+        }
     }
 
     nav {
@@ -107,10 +98,14 @@ get_header(); ?>
     }
     <?php include('wp-content/themes/t-sixteen-child-theme/myphpfiles/style-backtotop.php') ?>
 
+    .container-fluid {
+        max-width: none;
+    }
+
 
 </style>
 
- 
+
 
 
 <div id="primary" class="content-area">
@@ -127,10 +122,10 @@ get_header(); ?>
         <!--******************-->
 
 
-        <section class="slide1 vertical-center">
+        <section class="slide1 header vertical-center">
 
 
-            <div class="container-fluid">
+            <div class="container">
 
 
                 <div id="mainHeaderWrapper" class="clearfix">
@@ -145,32 +140,51 @@ get_header(); ?>
                 </div>
 
                 <div class="clearfix">
-                    <div class="col-sm-8">
+                    <div class="col-sm-6">
                         <!--
                     	<div class="clearfix intro-quote middle-container-2">
                     		<div class="quote-item-container float-left middle-text-2"><p class="quote-item">“</p></div>
                     		<div class="quote-slide1 float-left middle-text-2"><p style="font-family:'Raleway-BlackItalic'; font-size:2em;">La connaissance de soi est la spécialité de notre école.</p></div>
                     	</div>
                     -->
-                    	<h1 class="title-boussole-pro">Développez une culture d’entreprise basée sur les talents.</h1>
-                    	<p class="txt-slide-1">
-                            Boussole Pro est une plateforme qui rend explicite les forces et les complémentarités entre les collaborateurs.
-                    	</p>
+                        <div class="container-pulse-logo clearfix">
 
-                    	<div class="container-pulse-logo clearfix">
-                    		
-                    		<img class="logo-boussole-pro" src='<?php echo bloginfo('stylesheet_directory') . '/images/TALENT/logo_boussole_pro_white.png'; ?>'>
-                    		
-                    	</div>
+                            <img class="logo-boussole-pro" src='<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/BoussolePro_logo.svg'; ?>'>
 
-                        <p class="signature-right">Anaïs Raoux <br> <span style="font-size:0.6em"> DIRECTRICE WAKE UP</span>
+                        </div>
+                        <h1 class="title-boussole-pro">The talent compass for companies</h1>
+                        <p class="txt-slide-1">
+                            Visualize the distribution of talents in your team and strenthgens them through customized content for each team member.
                         </p>
 
+                        <a href="#slide-plan" class="btn-cta-boussolepro">Get started</a>
+
                     </div>
-                    <div class="col-sm-4"></div>
+                    <div id="carousel-app" class="carousel slide carousel-app" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/ScreenshotApp2.png'; ?>" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/ScreenshotApp3.png'; ?>" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/ScreenshotApp4.png'; ?>" alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/ScreenshotApp5.png'; ?>" alt="Fourth slide">
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                
+
             </div>
 
         </section>
@@ -178,64 +192,129 @@ get_header(); ?>
         <!-- **** SLIDE 1 *** -->
         <!--******************-->
         <!--******************-->
-        <!--***** SLIDE 2 ****-->
+        <!--***** SLIDE TAB ****-->
 
-        <section class="slide2">
-            <div class="container-fluid ">
-            	<div class="col-sm-4 hidden-small-2 bloc-gauche-seb">
-            		<img src='<?php echo bloginfo('stylesheet_directory') . '/images/TALENT/seb-side.png'; ?>'>
-            	</div>
-            	<div class="col-sm-8 bloc-droite-seb">
-            		<div class="container-text-slide2">
-            			<h2 class="title-vision">
-                            La <span style="color: #ff0055;">connaissance de soi</span> comme moteur de l’engagement
-                            
-	            		</h2>
-	            		<img class="line-uncertainty-mobile visible-small-2" src='<?php echo bloginfo('stylesheet_directory') . '/images/TALENT/line-uncertainty-mobile.png'; ?>'>
-	            		<p class="details-vision">
-                            Le réenchantement dans les entreprises ne se produira que si chaque collaborateur sent que ses talents sont alignés avec les projets de l’entreprise. Pour retrouver du sens au travail, il faut que chacun puisse valoriser ses talents autant que ceux des autres. C’est une condition nécessaire à l’émergence d’une réelle intelligence collective. Sans elle, les entreprises ne pourront faire face aux enjeux extraordinaires du XXIème siècle.
-	            		</p>
-            		</div>
-
-            		<img class="visible-small-2 seb" src='<?php echo bloginfo('stylesheet_directory') . '/images/TALENT/seb-side-mobile.png'; ?>'>
-            		
-
-            		<img class="line-uncertainty hidden-small-2" src='<?php echo bloginfo('stylesheet_directory') . '/images/TALENT/line-uncertainty.png'; ?>'>
-
-            		<p class="signature-left" style="text-align: left; ">Sébastien Sors <br> <span style="font-size:0.6em"> DIRECTEUR PÉDAGOGIQUE</span></p>
-
-            	</div>
-                
-            </div>
-        </section>
-
-        <!-- **** SLIDE 2 *** -->
-        <!--******************-->
-        <!--******************-->
-        <!-- ** SLIDE what ** -->
-        
-        <section class="slide-what">
+        <section class="slide-tabs">
             <div class="container-fluid">
-                <div class="section-texte col-md-4 col-sm-6">
-                    <h2>
-                        Valoriser les talents individuels et collectifs
-                    </h2>
-                    <p>
-                        Boussole Pro est une plateforme de connaissance de soi et des autres. Cet outil d’équipe est pensé pour construire des collectifs qui exploitent le maximum de leur potentiel tout en prenant du plaisir au travail. Il repose sur la version avancée de notre test de personnalité Boussole (grand public) qui compte plus de 110&nbsp000 utilisateurs.
-                    </p>
-
-                    <button >
-                        <a target="_blank" href="https://boussole.wake-up.io">Découvrir Boussole (grand public)</a>
-                    </button>
+                <div class="row">
+                    <div class="col tab-block tab1 active" data-pane="pane1">
+                        <strong class="number">1</strong>
+                        <div class="content">
+                            <img src="<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/Icon_Question.svg'; ?>" alt="Question mark">
+                            <h3>Talent test based on a neurophilosophical model.</h3>
+                        </div>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="col tab-block tab2" data-pane="pane2">
+                        <strong class="number">2</strong>
+                        <div class="content">
+                            <img src="<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/Icon_Boussole-graph.svg'; ?>" alt="Question mark">
+                            <h3>Visualization of talent distribution by person and team.</h3>
+                        </div>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="col tab-block tab3" data-pane="pane3">
+                        <strong class="number">3</strong>
+                        <div class="content">
+                            <img src="<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/Icon_Cards.svg'; ?>" alt="Question mark">
+                            <h3>Card collecting game with customised lessons about you and your team.</h3>
+                        </div>
+                        <div class="arrow-down"></div>
+                    </div>
                 </div>
-                <div class="section-mockup col-md-8 col-sm-6">
-                    <img class="mockup-large " src='<?php echo bloginfo('stylesheet_directory') . '/images/TALENT/mockup-boussole-pro-large.png'; ?>'>
-                    <img class="mockup-mobile " src='<?php echo bloginfo('stylesheet_directory') . '/images/TALENT/mockup-boussole-pro-mobile.png'; ?>'>
+                <div class="container tab-content pane1 active">
+                    <div class="row">
+                        <div class="col-md">
+                            <h2>The product starts with an advanced version of the already proven Boussole Talent test.</h2>
+                            <ul>
+                                <li>Already 110.000 users</li>
+                                <li>100% private, no data sell</li>
+                                <li>20 additional questions</li>
+                                <li>Current Boussole data importable</li>
+                            </ul>
+                        </div>
+                        <div class="col-md">
+                            <video src="<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/phone.mp4'; ?>" autoplay loop></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="container tab-content pane2"></div>
+                <div class="container tab-content pane3"></div>
+            </div>
+        </section>
+
+        <!-- **** SLIDE TAB *** -->
+        <!--******************-->
+        <!--******************-->
+        <!--***** SLIDE SEB ****-->
+
+        <section class="slide-seb">
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-sm-4 hidden-small-2 bloc-gauche-seb">
+                        <img src='<?php echo bloginfo('stylesheet_directory') . '/images/TALENT/seb-side.png'; ?>'>
+                    </div>
+                    <div class="col-sm-8 bloc-droite-seb">
+                        <div class="container-text-slide2">
+                            <h2 class="title-vision">
+                                Le XXIème siècle sera <span style="color: #ff0055;">introspectif</span> ou ne sera pas
+                            </h2>
+                            <p class="details-vision">
+                                Les incertitudes sont de plus en plus croissantes : business, politique, société, climat, effondrement de la biodiversité. Pour rester sereines faces aux bouleversements qui ont déjà commencés, les entreprises qui réussiront demain seront celles qui se connnaissent le mieux. Elles sauront alors créer une culture forte qui sera le pivot indispensable des transformations en cours.                            </p>
+                        </div>
+
+                        <img class="visible-small-2 seb" src='<?php echo bloginfo('stylesheet_directory') . '/images/TALENT/seb-side-mobile.png'; ?>'>
+
+                        <p class="signature-left">Sébastien Sors <br> <span style="font-size:0.6em"> DIRECTEUR PÉDAGOGIQUE</span></p>
+
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!--*** SLIDE what ***-->
+        <!-- **** SLIDE 3 *** -->
+        <!--******************-->
+        <!--******************-->
+        <!-- ** SLIDE WE ** -->
+
+        <section class="slide-we">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <h2>We help with...</h2>
+                        <div class="item">
+                            <img src='<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/talents.svg'; ?>'>
+                            <span>Understanding talents</span>
+                        </div>
+                        <div class="item">
+                            <img src='<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/force.svg'; ?>'>
+                            <span>Seeing the strength of others</span>
+                        </div>
+                        <div class="item">
+                            <img src='<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/values.svg'; ?>'>
+                            <span>Embracing company values</span>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <h2>We believe in...</h2>
+                        <div class="item">
+                            <img src='<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/content.svg'; ?>'>
+                            <span>Personalised content</span>
+                        </div>
+                        <div class="item">
+                            <img src='<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/learning.svg'; ?>'>
+                            <span>Continuously education</span>
+                        </div>
+                        <div class="item">
+                            <img src='<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/collective.svg'; ?>'>
+                            <span>The collective intellignece</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--*** SLIDE WE ***-->
         <!--******************-->
         <!--******************-->
         <!--***** SLIDE 3 ****-->
@@ -288,55 +367,97 @@ get_header(); ?>
         	</div>
         	
         </section>
+        -->
 
         <!-- **** SLIDE 3 *** -->
         <!--******************-->
         <!--******************-->
-        <!--***** SLIDE 4 ****-->
-        <section class="slide4">
-        	<div class="container-fluid">
-        		<div class="clearfix middle-container">
-        			<div class="col-sm-2 middle-text hidden-sm">
-        				<img class="arrow-cta" src='<?php echo bloginfo('stylesheet_directory') . '/images/TALENT/arrow-left.png'; ?>'>
-        			</div>
-        			<div class="col-sm-8 middle-text">
-        				<h2>Faisons grandir ensemble votre culture humaniste.</h2>
-        					<button >
-                                <a href="https://wake-up.io/demo-boussole-pro">Demander une démo</a>
-                            </button>
-        			</div>
-        			
-        			<div class="col-sm-2 middle-text hidden-sm">
-        				<img class="arrow-cta" src='<?php echo bloginfo('stylesheet_directory') . '/images/TALENT/arrow-right.png'; ?>'>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!-- **** SLIDE 4 *** -->
-        <!--******************-->
-        <!--******************-->
-        <!--***** MEDIAS *****-->
-
-        <section id="slide-G" class="slide-G">
-            <div class="container-fluid">
-                <div>
-                    <h2>Ils parlent de WAKE UP :</h2>
+        <!--***** SLIDE PLAN ****-->
+        <section class="slide-plan" id="slide-plan">
+            <div class="container">
+                <h1>Choose your plan</h1>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Start-ups</h5>
+                            <div class="card-subtitle">1-20 employees</div>
+                            <div class="price"><span class="symbol">€</span>299 <span class="times">1 time!</span></div>
+                            <ul class="card-text">
+                                <li>Max 20 Boussole Pro tests</li>
+                                <li>1 Team</li>
+                                <li>Exclusive Lessons</li>
+                                <li>Additional podcasts and videos</li>
+                                <li>Life-time access</li>
+                                <li>Manual set up</li>
+                            </ul>
+                            <a href="#" class="btn-cta-boussolepro">Get started</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Scale-ups</h5>
+                            <div class="card-subtitle">21-50 employees</div>
+                            <div class="price"><span class="symbol">€</span>499 <span class="times">1 time!</span></div>
+                            <ul class="card-text">
+                                <li>Max 50 Boussole Pro tests</li>
+                                <li>Multiple Teams</li>
+                                <li>Exclusive Lessons</li>
+                                <li>Additional podcasts and videos</li>
+                                <li>Life-time access</li>
+                                <li>Manual set up</li>
+                            </ul>
+                            <a href="#" class="btn-cta-boussolepro">Get started</a>
+                        </div>
+                    </div>
+                    <div class="card enterprises">
+                        <div class="card-body">
+                            <h5 class="card-title">Entreprises</h5>
+                            <div class="card-subtitle">50+ employees</div>
+                            <ul class="card-text">
+                                <li>Bulk pricing offer</li>
+                                <li>Unlimited Boussole Pro Tests</li>
+                                <li>Unlimited Teams</li>
+                                <li>Additional podcasts and videos</li>
+                                <li>Life-time access</li>
+                                <li>Automatic set up</li>
+                                <li>Optional tailored sessions</li>
+                                <li>Premium support</li>
+                            </ul>
+                            <a href="#" class="btn-cta-boussolepro">Get in touch</a>
+                        </div>
+                    </div>
                 </div>
-                <?php
-                include('wp-content/themes/t-sixteen-child-theme/myphpfiles/presse.php');
-                ?>
-                
             </div>
         </section>
-        
-        <!--******  MEDIAS ******-->
+        <!-- **** SLIDE PLAN *** -->
+        <!--******************-->
+        <!--******************-->
+        <!--***** SLIDE ANAIS *****-->
+
+        <section class="slide-anais">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-1">
+                        <div class="quote-anais">
+                            <span class="quote-mark">“</span>
+                            People are most valuable when they use their talents...
+                        </div>
+                        <img src="<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/play-btn.svg'; ?>">
+                        <p class="signature-right">Anaïs Raoux <br> <span style="font-size:0.6em"> DIRECTRICE WAKE UP</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--****** SLIDE ANAIS ******-->
         <!--*********************-->
 
 
 
     </main>
-    
-    
+
+
 </div><!-- .content-area -->
 
 
@@ -347,8 +468,8 @@ get_header(); ?>
         alert ("hello");
         var cssLink = document.createElement("link");
         cssLink.href = "<?php echo get_stylesheet_directory_uri(); ?>/css/style-wuconv.css?v1";
-        cssLink.rel = "stylesheet"; 
-        cssLink.type = "text/css"; 
+        cssLink.rel = "stylesheet";
+        cssLink.type = "text/css";
         frames['iframe1'].document.head.appendChild(cssLink);
     } ;
 </script>
@@ -357,24 +478,35 @@ get_header(); ?>
  * Translated default messages for the $ validation plugin.
  * Locale: FR
  */
-$.extend($.validator.messages, {
-        required: "Ce champ est requis.",
-        remote: "Veuillez remplir ce champ pour continuer.",
-        email: "Veuillez entrer une adresse email valide.",
-        url: "Veuillez entrer une URL valide.",
-        date: "Veuillez entrer une date valide.",
-        dateISO: "Veuillez entrer une date valide (ISO).",
-        number: "Veuillez entrer un nombre valide.",
-        digits: "Veuillez entrer (seulement) une valeur numérique.",
-        creditcard: "Veuillez entrer un numéro de carte de crédit valide.",
-        equalTo: "Veuillez entrer une nouvelle fois la même valeur.",
-        accept: "Veuillez entrer une valeur avec une extension valide.",
-        maxlength: $.validator.format("Veuillez ne pas entrer plus de {0} caractères."),
-        minlength: $.validator.format("Veuillez entrer au moins {0} caractères."),
-        rangelength: $.validator.format("Veuillez entrer entre {0} et {1} caractères."),
-        range: $.validator.format("Veuillez entrer une valeur entre {0} et {1}."),
-        max: $.validator.format("Veuillez entrer une valeur inférieure ou égale à {0}."),
-        min: $.validator.format("Veuillez entrer une valeur supérieure ou égale à {0}.")
-});}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        $.extend($.validator.messages, {
+            required: "Ce champ est requis.",
+            remote: "Veuillez remplir ce champ pour continuer.",
+            email: "Veuillez entrer une adresse email valide.",
+            url: "Veuillez entrer une URL valide.",
+            date: "Veuillez entrer une date valide.",
+            dateISO: "Veuillez entrer une date valide (ISO).",
+            number: "Veuillez entrer un nombre valide.",
+            digits: "Veuillez entrer (seulement) une valeur numérique.",
+            creditcard: "Veuillez entrer un numéro de carte de crédit valide.",
+            equalTo: "Veuillez entrer une nouvelle fois la même valeur.",
+            accept: "Veuillez entrer une valeur avec une extension valide.",
+            maxlength: $.validator.format("Veuillez ne pas entrer plus de {0} caractères."),
+            minlength: $.validator.format("Veuillez entrer au moins {0} caractères."),
+            rangelength: $.validator.format("Veuillez entrer entre {0} et {1} caractères."),
+            range: $.validator.format("Veuillez entrer une valeur entre {0} et {1}."),
+            max: $.validator.format("Veuillez entrer une valeur inférieure ou égale à {0}."),
+            min: $.validator.format("Veuillez entrer une valeur supérieure ou égale à {0}.")
+        });}(jQuery));var $mcj = jQuery.noConflict(true);
+</script>
 <!--End mc_embed_signup-->
 
+<script type="text/javascript">
+    $('.tab-block').click(function() {
+        $('.tab-block').removeClass('active')
+        $(this).addClass('active')
+        $('.tab-content').removeClass('active')
+        let pane = $(this).data('pane')
+        console.log(pane)
+        $(".tab-content." + pane).addClass('active')
+    })
+</script>

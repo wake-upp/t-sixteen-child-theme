@@ -9,10 +9,10 @@ nav ul li {
 	margin-right: auto;
 	width: 16%;
 }
-nav li a {
+nav li a, nav li .dropdown a.dropbtn {
   color: #ffffff;
   font-size: 1.2em;
-  border: 1px solid rgba(0,0,0,0) ;
+  border: none;
   border-radius: 20px;
   padding: 7px 17px 9px 18px;
   -webkit-transition: all .2s ease-in-out;
@@ -25,6 +25,18 @@ nav li a:hover , #nav li a:focus, #nav li a:active {
   background-color: rgba(0,0,0,0) ;
   -webkit-transition: all .2s ease-in-out;
   cursor: pointer;
+}
+
+.caret {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 2px;
+	vertical-align: middle;
+	border-top: 4px dashed;
+	border-top: 4px solid;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
 }
 
 /******************************/
