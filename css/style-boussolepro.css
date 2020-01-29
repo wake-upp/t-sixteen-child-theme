@@ -2,11 +2,14 @@
 /************* MAIN ***********/
 body {
     position: relative;
+    font-family: 'Raleway-Regular';
 }
+
 .newsletter {
     display: none;
 }
-img.logo-wakeup {
+
+.logo-wakeup {
     width: 140px;
     position: absolute;
     top: 2em;
@@ -14,29 +17,30 @@ img.logo-wakeup {
     left: 0px;
     right: 0px;
 }
+
 .site-main {
     background-color: #ffffff;
 }
-@media screen and (max-width: 550px) {
-    img.logo-wakeup {
-        width: 110px;
-    }
-}
-@media screen and (max-width: 400px) {
-    img.logo-wakeup {
-        width: 130px;
-    }
-}
+
 .float-left {
     float: left;
 }
 
-p {
-    font-family: 'Raleway-Regular';
-}
-
 .content-area {
     overflow-x: hidden;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    margin-left: -70px;
+    border-top: 70px solid white;
+    display: block;
 }
 
 .btn-cta-boussolepro {
@@ -53,6 +57,34 @@ p {
     color: #e9ddbf;
 }
 
+.bg-orange { background-color: #ca5716; }
+.bg-purple { background-color: #2a1972; }
+.bg-green  { background-color: #10B580; }
+.bg-lightgrey { background-color: #f9f9f9; }
+
+.txt-orange { color: #ca5716; }
+.txt-purple { color: #2a1972; }
+.txt-green  { color: #10B580; }
+.txt-whitish { color: #f9edcf; }
+.txt-pink { color: #ff0055; }
+
+.border-top-orange { border-top-color: #ca5716; }
+.border-top-purple { border-top-color: #2a1972; }
+.border-top-green { border-top-color: #10B580; }
+
+/* Boostrap sm default size = 572px */
+@media screen and (max-width: 572px) {
+    img.logo-wakeup {
+        width: 110px;
+    }
+
+    .btn-cta-boussolepro {
+        width: 100%;
+        text-align: center;
+        font-size: 1.6em;
+    }
+}
+
 /******************************/
 /********** SLIDE 1 ***********/
 
@@ -63,12 +95,14 @@ p {
     padding-top: 20em;
     padding-bottom: 5em;
 }
-.quote-item-container {
-    margin-right: 1em
-}
 
-.quote-slide1 {
-    width:80%
+.slide1 .arrow-down {
+    display: block;
+    position: absolute;
+    top: 0;
+    border-left-width: 100px;
+    border-right-width: 100px;
+    margin-left: -100px;
 }
 
 h1 {
@@ -93,89 +127,16 @@ p.txt-slide-1 {
 }
 
 img.logo-boussole-pro {
-    max-width: 270px;
+    max-width: 370px;
     margin-left: 0px;
     margin-top: 1em;
 }
 
-@media screen and (max-width: 783px) {
-    .slide1 .col-sm-8 {
-        max-width: 90%;
-    }
-    .quote-slide1 {
-        max-width:383px;
-    }
-    p.txt-slide-1 {
-        padding-left: 10px;
-    }
-    p.signature-right {
-        margin-right: 25%;
-    }
-    .slide1 {
-        padding-top: 15em;
-    }
-    img.logo-boussole-pro {
-        margin-left: 0px;
-    }
-}
-
-@media screen and (max-width: 564px) {
-    .slide1 .col-sm-8 {
-        max-width: 100%;
-
-    }
-    .slide1 .middle-container-2 {
-        display: table;
-        position: relative;
-        padding-top: 0em;
-        padding-bottom: 0em;
-    }
-
-    .slide1  .middle-text-2 {
-        float: none !important;
-        display: table-cell;
-        vertical-align: middle;
-    }
-    p.txt-slide-1 {
-        margin-top: 2.2em;
-        font-size:1.3em;
-        max-width: 500px;
-    }
-    .slide1 {
-        padding-top: 12em;
-    }
-    h1 {
-        margin-top: 1em;
-    }
-}
-@media screen and (max-width: 510px) {
-
-    p.signature-right {
-        margin-right: 45%;
-    }
-    .slide1 .container-fluid {
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-}
-@media screen and (max-width: 399px) {
-    img.logo-wakeup {
-        width: 110px;
-    }
-}
-@media screen and (max-width: 340px) {
-    p.quote-item {
-        font-size: 10em;
-        line-height: 0.7em;
-        margin-bottom: 0.5em;
-    }
-}
-
 .carousel-app {
     position: absolute;
-    top: 320px;
+    top: 350px;
     right: -50px;
-    width: 40%;
+    width: 50%;
 }
 
 .carousel-app .carousel-inner {
@@ -183,11 +144,11 @@ img.logo-boussole-pro {
     border: solid #f9edcf 4px;
 }
 
-.carousel-app .carousel-indicators {
+.slide1 .carousel-indicators {
     bottom: -70px;
 }
 
-.carousel-app .carousel-indicators li {
+.slide1 .carousel-indicators li {
     width: 10px;
     height: 10px;
     border-radius: 5px;
@@ -196,9 +157,75 @@ img.logo-boussole-pro {
     margin-right: 7px;
 }
 
-.carousel-app .carousel-indicators li.active {
+.slide1 .carousel-indicators li.active {
     background-color: #ff0055;
 }
+
+/* Boostrap lg default size = 992px */
+@media screen and (max-width: 992px) {
+
+    .slide1 .h1 {
+        color: white;
+    }
+
+    .txt-slide-1 {
+        color: white;
+    }
+
+    .slide1 .clearfix {
+        position: relative;
+    }
+
+    .txt-slide-1 {
+        margin-bottom: 550px;
+    }
+
+    .carousel-app {
+        position: absolute;
+        width: 100%;
+        top: auto;
+        bottom: 120px;
+        right: -20%;
+    }
+
+    .slide1 .carousel-indicators {
+        right: 50px;
+        left: -50px;
+    }
+}
+
+/* Boostrap md default size = 768px */
+@media screen and (max-width: 768px) {
+    .slide1 {
+        padding-top: 15em;
+    }
+
+    .txt-slide-1 {
+        margin-bottom: 430px;
+    }
+}
+
+/* Boostrap sm default size = 572px */
+@media screen and (max-width: 572px) {
+    .slide1 {
+        padding-top: 12em;
+    }
+
+    h1 {
+        margin-top: 1em;
+        font-size: 2.2em;
+    }
+
+    .txt-slide-1 {
+        margin-bottom: 350px;
+    }
+
+    .carousel-app {
+        bottom: 140px;
+    }
+}
+
+
 
 /********** SLIDE 1 ***********/
 /******************************/
@@ -207,7 +234,7 @@ img.logo-boussole-pro {
 
 section.slide-tabs {
     font-family: 'Raleway-SemiBold';
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .tab-block {
@@ -215,103 +242,114 @@ section.slide-tabs {
     cursor: pointer;
 }
 
-.tab1 {
-    background-color: #f68443;
-}
-
-.tab2 {
-    background-color: #151D78;
-}
-
-.tab3 {
-    background-color: #10B580;
-}
-
 .tab-block .content {
     width: 60%;
     margin-left: 40%;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    padding-right: 30px;
 }
 
 .tab-block .number {
     position: absolute;
-    font-size: 100px;
-    left: 10%;
+    font-size: 14em;
+    left: 20px;
+    top: 0;
     color: rgba(0, 0, 0, .1);
+    font-family: 'Raleway-Black';
+    line-height: .65em;
 }
 
 .tab-block .content img {
-    width: 30%;
+    width: 130px;
 }
 
 .tab-block .content h3 {
-    color: #f9edcf;
+    font-family: 'Raleway-Bold';
+    font-size: 1.1em;
 }
 
-.arrow-down {
-    width: 0;
-    height: 0;
-    border-left: 70px solid transparent;
-    border-right: 70px solid transparent;
-    position: absolute;
-    bottom: -70px;
-    left: 50%;
-    margin-left: -70px;
-    border-top: 70px solid #f68443;
+.tab-block:not(.active) .arrow-down {
     display: none;
-}
-
-.tab-block.active .arrow-down {
-    display: block;
-}
-
-.tab1 .arrow-down {
-    border-top-color: #f68443;
-}
-
-.tab2 .arrow-down {
-    border-top-color: #151D78;
-}
-
-.tab3 .arrow-down {
-    border-top-color: #10B580;
 }
 
 .tab-content {
     display: none;
+    font-family: 'Raleway-Medium';
 }
 
 .tab-content.active {
     display: block;
 }
 
-.tab-content h2 {
-    color: #f68443;
+.tab-content strong {
     font-size: 1.2em;
-    font-weight: 500;
     margin: 30px auto;
+    display: block;
+    font-family: 'Raleway-Bold';
 }
 
 .tab-content ul {
-    list-style: none; /* Remove default bullets */
+    list-style: none;
+    margin-bottom: 4em;
 }
 
 .tab-content ul li::before {
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #f68443; /* Change the color */
     font-weight: bold; /* If you want it to be bold */
     display: inline-block; /* Needed to add space between the bullet and the text */
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
-.tab-content li {
-    font-weight: 600;
-}
+.tab-content.pane1 ul li::before { color: #f68443; }
+.tab-content.pane2 ul li::before { color: #2a1972; }
+.tab-content.pane3 ul li::before { color: #10B580; }
 
 .tab-content video {
     margin-bottom: 0;
+}
+
+/* Boostrap lg default size = 992px */
+@media screen and (max-width: 992px) {
+    .tab-block .content img {
+        width: 100px;
+    }
+
+    .tab-block .content h3 {
+        font-size: 1em;
+    }
+}
+
+/* Boostrap md default size = 768px */
+@media screen and (max-width: 768px) {
+    .tab-block:not(.active) .arrow-down {
+        display: block;
+    }
+
+    .tab-block .number {
+        left: 45px;
+    }
+
+    .tab-block .content img {
+        width: 130px;
+    }
+
+    .tab-content {
+        display: block;
+        font-size: 1em;
+    }
+
+    .tab-content strong {
+        font-size: 1.5em
+    }
+}
+
+/* Boostrap sm default size = 572px */
+@media screen and (max-width: 572px) {
+    .tab-block .content img {
+        width: 100px;
+    }
 }
 
 /********** SLIDE TABS ***********/
@@ -319,42 +357,28 @@ section.slide-tabs {
 /******************************/
 /********** SLIDE SEB ***********/
 
-.slide2 .container-fluid {
-    max-width: 100%;
-    padding-left: 0px;
-}
-.slide2 .col-sm-4 {
-    padding-left: 0px;
-}
-
-.container-text-slide2 {
+.slide-seb .container-text {
     max-width: 600px;
-    margin-left: 5em;
-    margin-bottom: 2em;
-    position: relative;
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
-h2 {
-    color: #343151;
-    font-family: 'Raleway-Black';
+.slide-seb img {
+    width: 100%;
+    max-width: 440px;
+    margin-left: -15px;
 }
 
 h2.title-vision {
+    color: #343151;
+    font-family: 'Raleway-Black';
     max-width: 550px;
     margin-top: 2em;
-}
-
-.slide2 p {
-    color: #1e1e1e;
-    padding-left: 0px;
-    font-size:1.3em;
-    margin-top: 1em;
 }
 
 p.details-vision {
     margin-bottom: 2em;
     margin-top: 2em;
+    font-size: .9em;
 }
 
 p.signature-left {
@@ -371,99 +395,22 @@ p.signature-left {
     margin-right: 2em;
     position: absolute;
     bottom: 7%;
+    left: -5%;
 }
 
-.bloc-droite-seb {
-    position: relative;
-    padding-top: 5em;
-}
-
-img.line-uncertainty {
-    margin-left: -10%;
-    max-width: 80%;
-}
-
-@media screen and (max-width: 1400px) {
-    .bloc-gauche-seb {
-        width: 440px;
-    }
-    .bloc-gauche-seb img {
-        width: 440px;
-    }
-    .bloc-droite-seb {
-        position: relative;
-        padding-top: 3em;
-        width: 50%;
-    }
-    .container-text-slide2 {
-        margin-left: 0em;
-        margin-bottom: 2em;
-    }
-    .bloc-droite-seb {
-        padding-top: 3em;
-    }
-    img.line-uncertainty {
-        margin-left: -15%;
-        max-width: 100%;
-    }
-
-}
-@media screen and (max-width: 1200px) {
-    img.line-uncertainty {
-        margin-left: -15%;
-        max-width: 120%;
-    }
-    .slide2 p {
-        padding-left: 0px;
-        font-size:1.3em;
-        margin-top: 1em;
-    }
-    p.signature-left {
-        padding-left: 10px;
-    }
-}
-
-@media screen and (max-width: 973px) {
-    .bloc-droite-seb {
-        margin-left: -1.5em;
-    }
-}
-@media screen and (max-width: 960px) {
-    .bloc-gauche-seb {
-        width: 340px;
-    }
-    .bloc-gauche-seb img {
-        width: 340px;
-    }
-    .bloc-droite-seb {
-        padding-top: 2em;
-        width: 55%;
-    }
-    img.line-uncertainty {
-        display: none;
-    }
-}
-@media screen and (max-width: 768px) {
-    .bloc-gauche-seb {
-        width: 340px;
-        float: left;
-    }
-    .bloc-gauche-seb img {
-        width: 340px;
-    }
-    .bloc-droite-seb {
-        padding-top: 2em;
-        width: 55%;
-        float: left;
-    }
-    .slide2 {
-        padding-top: 0px;
-    }
-}
 .visible-small-2 {
     display: none;
 }
-@media screen and (max-width: 767px) {
+
+/* Boostrap lg default size = 992px */
+@media screen and (max-width: 992px) {
+    p.signature-left {
+        position: static;
+    }
+}
+
+/* Boostrap md default size = 768px */
+@media screen and (max-width: 768px) {
     .hidden-small-2 {
         display: none;
     }
@@ -502,6 +449,11 @@ img.line-uncertainty {
     img.visible-small-2.seb {
         max-width: 80%;
     }
+}
+
+/* Boostrap sm default size = 572px */
+@media screen and (max-width: 572px) {
+
 }
 
 /********** SLIDE SEB ***********/
@@ -582,7 +534,7 @@ section.slide-we {
 section.slide-plan {
     padding-bottom: 8em;
     padding-top: 2em;
-    background-color: rgba(250,250,250,1);
+    background-color: rgb(250,250,250);
 }
 
 .slide-plan h1 {

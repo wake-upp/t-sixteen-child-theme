@@ -115,8 +115,6 @@ get_header(); ?>
         <?php include('wp-content/themes/t-sixteen-child-theme/myphpfiles/fondateurs.php') ?>
         <?php include('wp-content/themes/t-sixteen-child-theme/myphpfiles/charte.php') ?>
 
-        <div id="cover"></div>
-
         <!-- **** SLIDE 1 *** -->
         <!--******************-->
         <!--******************-->
@@ -124,11 +122,12 @@ get_header(); ?>
 
         <section class="slide1 header vertical-center">
 
+            <div class="arrow-down"></div>
 
             <div class="container">
 
 
-                <div id="mainHeaderWrapper" class="clearfix">
+                <div id="mainHeaderWrapper">
 
                     <a href="<?php echo site_url(); ?>">
                         <img class="logo-wakeup" alt="logo-wake up"
@@ -140,7 +139,7 @@ get_header(); ?>
                 </div>
 
                 <div class="clearfix">
-                    <div class="col-sm-6">
+                    <div class="col-lg-6">
                         <!--
                     	<div class="clearfix intro-quote middle-container-2">
                     		<div class="quote-item-container float-left middle-text-2"><p class="quote-item">“</p></div>
@@ -161,12 +160,6 @@ get_header(); ?>
 
                     </div>
                     <div id="carousel-app" class="carousel slide carousel-app" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img class="d-block w-100" src="<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/ScreenshotApp2.png'; ?>" alt="First slide">
@@ -181,6 +174,12 @@ get_header(); ?>
                                 <img class="d-block w-100" src="<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/ScreenshotApp5.png'; ?>" alt="Fourth slide">
                             </div>
                         </div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-app" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-app" data-slide-to="1"></li>
+                            <li data-target="#carousel-app" data-slide-to="2"></li>
+                            <li data-target="#carousel-app" data-slide-to="3"></li>
+                        </ol>
                     </div>
                 </div>
 
@@ -194,38 +193,38 @@ get_header(); ?>
         <!--******************-->
         <!--***** SLIDE TAB ****-->
 
-        <section class="slide-tabs">
+        <section class="slide-tabs bg-lightgrey">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col tab-block tab1 active" data-pane="pane1">
+                    <div id="tab1" class="col-md tab-block active bg-orange" data-pane="pane1">
                         <strong class="number">1</strong>
                         <div class="content">
                             <img src="<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/Icon_Question.svg'; ?>" alt="Question mark">
-                            <h3>Talent test based on a neurophilosophical model.</h3>
+                            <h3 class="txt-whitish">Talent test based on a neurophilosophical model.</h3>
                         </div>
-                        <div class="arrow-down"></div>
+                        <div class="arrow-down border-top-orange"></div>
                     </div>
-                    <div class="col tab-block tab2" data-pane="pane2">
+                    <div id="tab2" class="col-md tab-block bg-purple" data-pane="pane2">
                         <strong class="number">2</strong>
                         <div class="content">
                             <img src="<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/Icon_Boussole-graph.svg'; ?>" alt="Question mark">
-                            <h3>Visualization of talent distribution by person and team.</h3>
+                            <h3 class="txt-whitish">Visualization of talent distribution by person and team.</h3>
                         </div>
-                        <div class="arrow-down"></div>
+                        <div class="arrow-down border-top-purple"></div>
                     </div>
-                    <div class="col tab-block tab3" data-pane="pane3">
+                    <div id="tab3" class="col-md tab-block bg-green" data-pane="pane3">
                         <strong class="number">3</strong>
                         <div class="content">
                             <img src="<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/Icon_Cards.svg'; ?>" alt="Question mark">
-                            <h3>Card collecting game with customised lessons about you and your team.</h3>
+                            <h3 class="txt-whitish">Card collecting game with customised lessons about you and your team.</h3>
                         </div>
-                        <div class="arrow-down"></div>
+                        <div class="arrow-down border-top-green"></div>
                     </div>
                 </div>
-                <div class="container tab-content pane1 active">
+                <div id="pane1" class="container tab-content active" data-tab="tab1">
                     <div class="row">
                         <div class="col-md">
-                            <h2>The product starts with an advanced version of the already proven Boussole Talent test.</h2>
+                            <strong class="txt-orange">The product starts with an advanced version of the already proven Boussole Talent test.</strong>
                             <ul>
                                 <li>Already 110.000 users</li>
                                 <li>100% private, no data sell</li>
@@ -234,12 +233,41 @@ get_header(); ?>
                             </ul>
                         </div>
                         <div class="col-md">
-                            <video src="<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/phone.mp4'; ?>" autoplay loop></video>
+                            <video src="<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/phone.mp4'; ?>" autoplay muted loop></video>
                         </div>
                     </div>
                 </div>
-                <div class="container tab-content pane2"></div>
-                <div class="container tab-content pane3"></div>
+                <div id="pane2" class="container tab-content" data-tab="tab2">
+                    <div class="row">
+                        <div class="col-md">
+                            <strong class="txt-purple">La cartographie d'équipe sert à mieux comprendre les apports et les complémentarités de chacun dans un projet. Elle aide aussi à identifier la force principale du groupe.</strong>
+                            <ul>
+                                <li>Simulation dynamique</li>
+                                <li>Description du projet idéal pour l'équipe</li>
+                                <li>Accessible à tous les membres de l'équipe</li>
+                            </ul>
+                        </div>
+                        <div class="col-md">
+                            <video src="<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/graph.mp4'; ?>" autoplay muted loop></video>
+                        </div>
+                    </div>
+                </div>
+                <div id="pane3" class="container tab-content" data-tab="tab3">
+                    <div class="row">
+                        <div class="col-md">
+                            <strong class="txt-green">Tous les contenus sont livrés sous forme de cartes à collectioner. Ils accompagnent le processus de connaissance de soi et des autres pour améliorer au quotidien ses relations et son plaisir de travailler.</strong>
+                            <ul>
+                                <li>Une expérience pédagogique unique</li>
+                                <li>Les indispensables pour mieux se connaître</li>
+                                <li>Des infos clés sur ses co-équipiers</li>
+                                <li>8 leçons pour créer des équipes performantes</li>
+                            </ul>
+                        </div>
+                        <div class="col-md">
+                            <video src="<?php echo bloginfo('stylesheet_directory') . '/images/BOUSSOLE-PRO/cards.mp4'; ?>" autoplay muted loop></video>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -251,13 +279,13 @@ get_header(); ?>
         <section class="slide-seb">
             <div class="container-fluid ">
                 <div class="row">
-                    <div class="col-sm-4 hidden-small-2 bloc-gauche-seb">
+                    <div class="col-sm-5 hidden-small-2">
                         <img src='<?php echo bloginfo('stylesheet_directory') . '/images/TALENT/seb-side.png'; ?>'>
                     </div>
-                    <div class="col-sm-8 bloc-droite-seb">
-                        <div class="container-text-slide2">
+                    <div class="col-sm-7">
+                        <div class="container-text">
                             <h2 class="title-vision">
-                                Le XXIème siècle sera <span style="color: #ff0055;">introspectif</span> ou ne sera pas
+                                Le XXIème siècle sera <strong class="txt-pink">introspectif</strong> ou ne sera pas.
                             </h2>
                             <p class="details-vision">
                                 Les incertitudes sont de plus en plus croissantes : business, politique, société, climat, effondrement de la biodiversité. Pour rester sereines faces aux bouleversements qui ont déjà commencés, les entreprises qui réussiront demain seront celles qui se connnaissent le mieux. Elles sauront alors créer une culture forte qui sera le pivot indispensable des transformations en cours.                            </p>
@@ -265,7 +293,7 @@ get_header(); ?>
 
                         <img class="visible-small-2 seb" src='<?php echo bloginfo('stylesheet_directory') . '/images/TALENT/seb-side-mobile.png'; ?>'>
 
-                        <p class="signature-left">Sébastien Sors <br> <span style="font-size:0.6em"> DIRECTEUR PÉDAGOGIQUE</span></p>
+                        <p class="signature-left">Sébastien Sors <br> <span style="font-size:0.6em">DIRECTEUR PÉDAGOGIQUE</span></p>
 
                     </div>
                 </div>
@@ -463,21 +491,26 @@ get_header(); ?>
 
 <?php get_footer(); ?>
 
-<script type="text/javascript">
-    $( document ).ready(function() {
-        alert ("hello");
-        var cssLink = document.createElement("link");
-        cssLink.href = "<?php echo get_stylesheet_directory_uri(); ?>/css/style-wuconv.css?v1";
-        cssLink.rel = "stylesheet";
-        cssLink.type = "text/css";
-        frames['iframe1'].document.head.appendChild(cssLink);
-    } ;
-</script>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script type='text/javascript'>
+    (function($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0]='EMAIL';
+        ftypes[0]='email';
+        fnames[1]='FNAME';
+        ftypes[1]='text';
+        fnames[2]='LNAME';
+        ftypes[2]='text';
+        fnames[3]='ADDRESS';
+        ftypes[3]='address';
+        fnames[4]='PHONE';
+        ftypes[4]='phone';
 
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone'; /*
- * Translated default messages for the $ validation plugin.
- * Locale: FR
- */
+        /*
+        * Translated default messages for the $ validation plugin.
+        * Locale: FR
+        */
         $.extend($.validator.messages, {
             required: "Ce champ est requis.",
             remote: "Veuillez remplir ce champ pour continuer.",
@@ -496,10 +529,13 @@ get_header(); ?>
             range: $.validator.format("Veuillez entrer une valeur entre {0} et {1}."),
             max: $.validator.format("Veuillez entrer une valeur inférieure ou égale à {0}."),
             min: $.validator.format("Veuillez entrer une valeur supérieure ou égale à {0}.")
-        });}(jQuery));var $mcj = jQuery.noConflict(true);
+        });
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
 </script>
 <!--End mc_embed_signup-->
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 <script type="text/javascript">
     $('.tab-block').click(function() {
         $('.tab-block').removeClass('active')
@@ -507,6 +543,14 @@ get_header(); ?>
         $('.tab-content').removeClass('active')
         let pane = $(this).data('pane')
         console.log(pane)
-        $(".tab-content." + pane).addClass('active')
+        $("#" + pane).addClass('active')
     })
+
+    if (Modernizr.mq('(max-width: 768px)')) {
+        console.log("screen width < 678 ")
+        $(".tab-content").each(function() {
+            $(this).detach();
+            $('#' + $(this).data('tab')).after($(this))
+        })
+    }
 </script>
